@@ -1,20 +1,29 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import AppLoading from 'expo-app-loading';
+import { useFonts, Quicksand_400Regular, Quicksand_500Medium, Quicksand_700Bold } from '@expo-google-fonts/quicksand';
+import { NavigationContainer } from '@react-navigation/native';
+import { PublicRoutes } from './src/routes/public.routes';
+import { UserProvider } from './src/context/UserContext';
 
 export default function App() {
+
+  let [fontsLoaded] = useFonts({
+    quicksand_400: Quicksand_400Regular,
+    quicksand_500: Quicksand_500Medium,
+    quicksand_700: Quicksand_700Bold,
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <UserProvider>
+      <NavigationContainer>
+        <PublicRoutes />
+        <StatusBar style="light" />
+      </NavigationContainer>
+    </UserProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
