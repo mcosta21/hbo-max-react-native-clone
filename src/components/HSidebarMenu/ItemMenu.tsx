@@ -12,8 +12,8 @@ interface Props {
 
 export function ItemMenu({ item, onPress }: Props) {
     return (
-        <TouchableOpacity onPress={() => onPress(item.name)}>
-            <Text style={{ color: '#fff'}}>{item.displayName}</Text>
+        <TouchableOpacity onPress={() => onPress(item.name)} style={{ marginBottom: 8, marginLeft: 14 }}>
+            <Text style={{ color: '#FFF', fontSize: 23,  }}>{item.displayName}</Text>
         </TouchableOpacity>
     )
 }

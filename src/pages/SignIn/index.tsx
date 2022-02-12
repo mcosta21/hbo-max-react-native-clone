@@ -1,5 +1,5 @@
 import React, { ReactNode, useState } from 'react';
-import { Button, Text, TextInput } from 'react-native'
+import { Button, Text, TextInput, View } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { BBody } from '../../components/BBody';
 import { useUser } from '../../hooks/useUser';
@@ -28,7 +28,7 @@ export function SignInPage({ children, navigation }: SignInProps) {
   }
 
   return (
-    <BBody useSafeAreaHeader style={{ height: 800 }}>
+    <BBody useSafeAreaHeader>
         <Container>
           <TextInput
             placeholder="Username"
@@ -43,8 +43,11 @@ export function SignInPage({ children, navigation }: SignInProps) {
             secureTextEntry
             style={{ backgroundColor: '#fff', height: 60 }}
           />
-          <Button title="Entrar" onPress={() => handleSignIn(username, password)}>
-          </Button >
+          <View style={{ height: 100, backgroundColor: 'gray'}}>
+            <Button title="Entrar" onPress={() => handleSignIn(username, password)}>
+            </Button >
+          </View>
+
         </Container>
     </BBody>
     

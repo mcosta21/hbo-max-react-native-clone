@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import {
   DrawerContentComponentProps, DrawerContentScrollView
 } from '@react-navigation/drawer';
@@ -7,8 +8,9 @@ import { RouterKey } from '../../routes/routes';
 import { ItemMenu } from './ItemMenu';
 import { options } from './menu';
 import { SContainer } from './styles';
+import theme from '../../styles/styles';
 
-export function SidebarMenu(props: DrawerContentComponentProps ) {
+export function HSidebarMenu(props: DrawerContentComponentProps ) {
 
   const { navigation } = props;
 
@@ -16,8 +18,19 @@ export function SidebarMenu(props: DrawerContentComponentProps ) {
     navigation.navigate(route);
   }
 
+  function handleClose() {
+    navigation.closeDrawer();
+  }
+
   return (
     <SContainer>
+        <Ionicons 
+          name="close-outline" 
+          size={32} 
+          color={theme.colors.purple_normal} 
+          onPress={handleClose}
+          style={{ marginLeft: 8, marginBottom: 4 }}
+        />
         <FlatList
           data={options}
           renderItem={({item}) => <ItemMenu item={item} onPress={handleNavidate} />}

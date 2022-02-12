@@ -2,7 +2,7 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { RouterKey } from './routes';
 import { TabRoutes } from './tab.routes';
-import { SidebarMenu } from '../components/SidebarMenu';
+import { HSidebarMenu } from '../components/HSidebarMenu';
 import { SettingsPage } from '../pages/Settings';
 
 
@@ -17,7 +17,7 @@ export function PrivateRoutes() {
       <Navigator 
         screenOptions={tabBarOptions} 
         initialRouteName={RouterKey.TabRoutes} 
-        drawerContent={(props) => <SidebarMenu {...props} />}
+        drawerContent={(props) => <HSidebarMenu {...props} />}
       >
         <Screen name={RouterKey.TabRoutes} component={TabRoutes}/>
         <Screen name={RouterKey.SettingsPage} component={SettingsPage} />
