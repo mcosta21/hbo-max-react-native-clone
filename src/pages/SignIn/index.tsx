@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from 'react';
 import { Button, Text, TextInput, View } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { BBody } from '../../components/BBody';
+import { HBody } from '../../components/HBody';
 import { useUser } from '../../hooks/useUser';
 import { RouterKey } from '../../routes/routes';
 import { Container } from './styles';
@@ -28,7 +28,7 @@ export function SignInPage({ children, navigation }: SignInProps) {
   }
 
   return (
-    <BBody useSafeAreaHeader>
+    <HBody useSafeAreaHeader>
         <Container>
           <TextInput
             placeholder="Username"
@@ -49,7 +49,7 @@ export function SignInPage({ children, navigation }: SignInProps) {
           </View>
 
         </Container>
-    </BBody>
+    </HBody>
     
   );
 };

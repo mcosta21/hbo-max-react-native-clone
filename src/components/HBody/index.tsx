@@ -1,10 +1,9 @@
 import { useIsFocused } from '@react-navigation/native';
-import { LinearGradient } from 'expo-linear-gradient';
 import React, { ReactNode, useEffect, useState } from 'react';
-import { Text, Image, ImageBackground, NativeScrollEvent, NativeSyntheticEvent, ViewProps, View, Platform } from "react-native";
+import { NativeScrollEvent, NativeSyntheticEvent, Platform, ViewProps } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { HHeader } from '../HHeader';
-import { HScrollArea, SImageBackground, HContent } from './styles';
+import { HContent, HScrollArea, SImageBackground } from './styles';
 
 interface Props extends ViewProps {
   children: ReactNode;
@@ -12,7 +11,7 @@ interface Props extends ViewProps {
   useSafeAreaHeader?: boolean;
 }
 
-export function BBody({ 
+export function HBody({ 
   children, 
   openSidebar, 
   useSafeAreaHeader = false,

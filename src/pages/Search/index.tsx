@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
-import { BBody } from "../../components/BBody";
+import { HBody } from "../../components/HBody";
 import { DrawerContentComponentProps } from '@react-navigation/drawer';
 
 interface Props extends DrawerContentComponentProps {
@@ -15,8 +15,8 @@ export function SearchPage({ navigation }: Props) {
     }
 
     return (
-        <BBody openSidebar={openSidebar} useSafeAreaHeader style={{ flex: 1, height: 100, backgroundColor: 'red', alignItems: 'center', justifyContent: 'center' }}>
+        <HBody openSidebar={openSidebar} useSafeAreaHeader style={{ flex: 1, height: 100, backgroundColor: 'red', alignItems: 'center', justifyContent: 'center' }}>
             <Text style={{ color: '#fff'}}>Search</Text>
-        </BBody>
+        </HBody>
     )
 }

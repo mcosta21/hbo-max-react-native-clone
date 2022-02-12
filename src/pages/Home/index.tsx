@@ -1,7 +1,7 @@
 import { DrawerContentComponentProps } from '@react-navigation/drawer';
 import React, { useEffect, useState } from "react";
 import { Image, Text, View } from "react-native";
-import { BBody } from "../../components/BBody";
+import { HBody } from "../../components/HBody";
 import { HSimpleList } from "../../components/HSimpleList";
 import { useUser } from "../../hooks/useUser";
 import { getMovies } from "../../services/themoviedb/movie.api";
@@ -32,7 +32,7 @@ export function HomePage({ navigation }: Props) {
     }
 
     return (
-        <BBody openSidebar={openSidebar}>
+        <HBody openSidebar={openSidebar}>
             <HHighlightPanel>
                 <HSimpleList
                     title="Just For You"
@@ -99,6 +99,6 @@ export function HomePage({ navigation }: Props) {
             <Text style={{ color: '#fff', fontSize: 22 }}>HOME</Text>
 
                 
-        </BBody>
+        </HBody>
     )
 }
