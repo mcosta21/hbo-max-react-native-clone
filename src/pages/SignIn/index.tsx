@@ -1,6 +1,7 @@
 import React, { ReactNode, useState } from 'react';
 import { Button, Text, TextInput } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { BBody } from '../../components/BBody';
 import { useUser } from '../../hooks/useUser';
 import { RouterKey } from '../../routes/routes';
 import { Container } from './styles';
@@ -20,27 +21,33 @@ export function SignInPage({ children, navigation }: SignInProps) {
   async function handleSignIn(email: string, password: string) {
     try {
       // await login(email, password);
-      navigation.navigate('Logged');
+      navigation.navigate(RouterKey.PrivateRoutes);
     } catch (error) {
       alert(error);
     }
   }
 
   return (
-    <Container>
-      <TextInput
-        placeholder="Username"
-        value={username}
-        onChangeText={setUsername}
-      />
-      <TextInput
-        placeholder="Password"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-      />
-      <Button title="Sign in" onPress={() => handleSignIn(username, password)} />
-    </Container>
+    <BBody useSafeAreaHeader style={{ height: 800 }}>
+        <Container>
+          <TextInput
+            placeholder="Username"
+            value={username}
+            onChangeText={setUsername}
+            style={{ backgroundColor: '#fff', height: 60 }}
+          />
+          <TextInput
+            placeholder="Password"
+            value={password}
+            onChangeText={setPassword}
+            secureTextEntry
+            style={{ backgroundColor: '#fff', height: 60 }}
+          />
+          <Button title="Entrar" onPress={() => handleSignIn(username, password)}>
+          </Button >
+        </Container>
+    </BBody>
+    
   );
 };
 

@@ -1,7 +1,10 @@
 
 export enum RouterKey {
-    Home = 'Home',
+    TabRoutes = 'TabRoutes',
+    PrivateRoutes = 'PrivateRoutes',
+    HomePage = 'Home',
     Sidebar = 'Sidebar',
-    Settings = "Settings",
-    SignOut = "SignOut"
+    SettingsPage = "Settings",
+    SignInPage = "SignIn",
+    SignOutPage = "SignOut"
 }

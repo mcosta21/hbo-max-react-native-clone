@@ -14,9 +14,13 @@ const tabBarOptions = {
 
 export function PrivateRoutes() {
     return (
-      <Navigator screenOptions={tabBarOptions} initialRouteName="Home" drawerContent={(props) => <SidebarMenu {...props} />}>
-        <Screen name="Home" component={TabRoutes}/>
-        <Screen name={RouterKey.Settings} component={SettingsPage} />
+      <Navigator 
+        screenOptions={tabBarOptions} 
+        initialRouteName={RouterKey.TabRoutes} 
+        drawerContent={(props) => <SidebarMenu {...props} />}
+      >
+        <Screen name={RouterKey.TabRoutes} component={TabRoutes}/>
+        <Screen name={RouterKey.SettingsPage} component={SettingsPage} />
       </Navigator>
     )
 }

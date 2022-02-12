@@ -7,11 +7,11 @@ export interface OptionMenu {
 
 export const options = [
     {
-        name: RouterKey.Settings,
+        name: RouterKey.SettingsPage,
         displayName: 'Configurações'
     },
     {
-        name: RouterKey.SignOut,
+        name: RouterKey.SignOutPage,
         displayName: 'Sair'
     }
 ] as Array<OptionMenu>;

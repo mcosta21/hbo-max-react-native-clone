@@ -3,7 +3,7 @@ import theme from '../../styles/styles';
 
 export const HContent = styled.View`
     position: relative;
-    top: 94px;
+    top: 104px;
 `;
 
 export const HScrollArea = styled.ScrollView`

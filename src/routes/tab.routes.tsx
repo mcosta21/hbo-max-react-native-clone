@@ -2,25 +2,21 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import theme from '../styles/styles';
-import { AntDesign, Ionicons } from '@expo/vector-icons';
+import { AntDesign, Feather, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { NavigationContainer } from '@react-navigation/native';
 
 import { AccountPage } from '../pages/Account';
 import { HomePage } from '../pages/Home';
 
 import { Platform } from 'react-native';
+import { RouterKey } from './routes';
+import { SearchPage } from '../pages/Search';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
 const tabBarOptions = {
   tabBarShowLabel: false,
   headerShown: false,
-  tabBarStyle: {
-    height: 94,
-    backgroundColor: theme.colors.black_1,
-    borderTopWidth: 1,
-    borderTopColor: theme.colors.gray_dark,
-  },
   tabStyle: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -32,15 +28,37 @@ const tabBarOptions = {
   },
 }
 export function TabRoutes() {
+
+    const tabBarStyle = {
+      height: Platform.OS === 'android' ? 64 : 94,
+      backgroundColor: theme.colors.black_1,
+      borderTopWidth: 1,
+      borderTopColor: theme.colors.gray_dark,
+    };
+
     return (
-      <Navigator screenOptions={tabBarOptions} initialRouteName="Home">
-        <Screen name="Home"  component={HomePage} options={{
+      <Navigator 
+        screenOptions={{ ...tabBarOptions, tabBarStyle }} 
+        initialRouteName={RouterKey.HomePage}
+        >
+        <Screen name={RouterKey.HomePage}  component={HomePage} options={{
           tabBarIcon: ({ size, focused }) => {
             return (
-              <AntDesign 
-                name="home" 
+              <MaterialCommunityIcons 
+                name="home-variant-outline" 
                 size={size} 
-                color={focused ? theme.colors.orange : theme.colors.blue }
+                color={focused ? theme.colors.purple_normal : theme.colors.white }
+              />
+            );
+          }
+        }}/>
+        <Screen name="Search" component={SearchPage} options={{
+          tabBarIcon: ({ size, focused }) => {
+            return (
+              <Feather 
+                name="search" 
+                size={size - 2} 
+                color={focused ? theme.colors.purple_normal : theme.colors.white }
               />
             );
           }
@@ -48,10 +66,10 @@ export function TabRoutes() {
         <Screen name="Account" component={AccountPage} options={{
           tabBarIcon: ({ size, focused }) => {
             return (
-              <Ionicons 
-                name="ios-settings-outline" 
-                size={size} 
-                color={focused ? theme.colors.orange : theme.colors.blue }
+              <AntDesign 
+                name="user" 
+                size={size - 3} 
+                color={focused ? theme.colors.purple_normal : theme.colors.white }
               />
             );
           }

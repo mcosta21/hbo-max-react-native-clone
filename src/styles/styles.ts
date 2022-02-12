@@ -29,5 +29,9 @@ export default {
     white: '#fff',
     gray: '#F7F9FA',
     gray_dark: '#222',
+    purple_dark: 'rgb(71, 16, 193)',
+    purple_normal: 'rgb(120, 87, 255)',
+    purple_light: 'rgb(129, 155, 253)',
+
   },
 };
