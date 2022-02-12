@@ -10,7 +10,7 @@ interface Props {
     onPress: (route: RouterKey) => void;
 }
 
-export function ItemMenu({ item, onPress }: Props) {
+export function HItemMenu({ item, onPress }: Props) {
     return (
         <TouchableOpacity onPress={() => onPress(item.name)} style={{ marginBottom: 8, marginLeft: 14 }}>
             <Text style={{ color: '#FFF', fontSize: 23,  }}>{item.displayName}</Text>

@@ -1,12 +1,11 @@
-import React, { ReactNode, useEffect } from 'react';
-import { Text, View } from 'react-native';
-
-import { RouterKey } from '../../routes/routes';
+import { Feather } from '@expo/vector-icons';
+import React from 'react';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import Animated, { interpolateColor, useAnimatedStyle, useDerivedValue, withTiming } from 'react-native-reanimated';
 import theme from '../../styles/styles';
+import { SContainer, SContent, SLeftSide, SLogo, SRightSide } from './styles';
 
-import { Button, Container, LeftSide, Logo, RightSide, SContent } from './styles';
-import { Feather, MaterialCommunityIcons } from '@expo/vector-icons';
-import Animated, { useSharedValue, useAnimatedStyle, withTiming, interpolateColors, useDerivedValue, interpolateColor } from 'react-native-reanimated';
+
 
 
 interface Props {
@@ -14,7 +13,7 @@ interface Props {
   showBackgroundHeader: boolean;
 }
 
-export function BHeader({ 
+export function HHeader({ 
     openSidebar, 
     showBackgroundHeader,
 }: Props) {
@@ -36,21 +35,21 @@ export function BHeader({
   }); 
 
   return (
-    <Container>
+    <SContainer>
       <Animated.View style={[headerStyle]}>
         <SContent>
-          <LeftSide>
-            <Button>
+          <SLeftSide>
+            <TouchableOpacity>
               <Feather name="menu" size={26} color={theme.colors.white} onPress={() => openSidebar()} />
-            </Button>
-          </LeftSide>
+            </TouchableOpacity>
+          </SLeftSide>
 
-          <Logo source={require("../../assets/logo.png")} resizeMode="contain" />
+          <SLogo source={require("../../assets/logo.png")} resizeMode="contain" />
 
-          <RightSide />
+          <SRightSide />
         </SContent>
       </Animated.View>
-    </Container>
+    </SContainer>
   );
 };
 

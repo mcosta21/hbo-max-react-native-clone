@@ -5,7 +5,7 @@ import {
 import React from 'react';
 import { FlatList } from 'react-native';
 import { RouterKey } from '../../routes/routes';
-import { ItemMenu } from './ItemMenu';
+import { HItemMenu } from './HItemMenu';
 import { options } from './menu';
 import { SContainer } from './styles';
 import theme from '../../styles/styles';
@@ -33,7 +33,7 @@ export function HSidebarMenu(props: DrawerContentComponentProps ) {
         />
         <FlatList
           data={options}
-          renderItem={({item}) => <ItemMenu item={item} onPress={handleNavidate} />}
+          renderItem={({item}) => <HItemMenu item={item} onPress={handleNavidate} />}
           keyExtractor={item => item.name}
         />
     </SContainer>

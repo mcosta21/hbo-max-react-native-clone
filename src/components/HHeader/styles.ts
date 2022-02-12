@@ -1,8 +1,7 @@
 import { Platform } from 'react-native';
 import styled from 'styled-components/native';
-import theme from '../../styles/styles';
 
-export const Container = styled.View`
+export const SContainer = styled.View`
     width: 100%;
     height: ${Platform.OS === 'ios' ? '104px' : '84px'};
 
@@ -23,17 +22,14 @@ export const SContent = styled.View`
     padding-bottom: 16px;
 `
 
-export const LeftSide = styled.View`
+export const SLeftSide = styled.View`
 `;
 
-export const RightSide = styled.View`
+export const SRightSide = styled.View`
     min-width: 26px;
 `;
 
-export const Button = styled.TouchableOpacity`
-`
-
-export const Logo = styled.Image`
+export const SLogo = styled.Image`
     width: 110px;
     height: 24px;
 `

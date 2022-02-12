@@ -3,7 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { Text, Image, ImageBackground, NativeScrollEvent, NativeSyntheticEvent, ViewProps, View, Platform } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
-import { BHeader } from '../BHeader';
+import { HHeader } from '../HHeader';
 import { HScrollArea, SImageBackground, HContent } from './styles';
 
 interface Props extends ViewProps {
@@ -55,7 +55,7 @@ export function BBody({
         <Animated.View style={[{ flex: 1 }, animatedStyles]}>
           {
             !!openSidebar && (
-              <BHeader openSidebar={openSidebar} showBackgroundHeader={showBackgroundHeader} />
+              <HHeader openSidebar={openSidebar} showBackgroundHeader={showBackgroundHeader} />
             )
           }
           <HScrollArea 
@@ -63,9 +63,7 @@ export function BBody({
             onScroll={handleScroll}
           >
             <HContent style={{ top: useSafeAreaHeader ? getTop() : 0 }}>
-              <View {...rest} style={{ height: '100%' }}>
                 { children }
-              </View>
             </HContent>
           </HScrollArea>
           
