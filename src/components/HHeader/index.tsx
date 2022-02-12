@@ -44,7 +44,7 @@ export function HHeader({
             </TouchableOpacity>
           </SLeftSide>
 
-          <SLogo source={require("../../assets/logo.png")} resizeMode="contain" />
+          <SLogo source={require("assets/logo.png")} resizeMode="contain" />
 
           <SRightSide />
         </SContent>
