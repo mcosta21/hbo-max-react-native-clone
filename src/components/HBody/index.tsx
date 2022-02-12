@@ -1,9 +1,10 @@
 import { useIsFocused } from '@react-navigation/native';
+import { HGradientBackground } from 'components/HGradientBackground';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { NativeScrollEvent, NativeSyntheticEvent, Platform, ViewProps } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { HHeader } from '../HHeader';
-import { HContent, HScrollArea, SImageBackground } from './styles';
+import { HContent, HScrollArea } from './styles';
 
 interface Props extends ViewProps {
   children: ReactNode;
@@ -50,7 +51,7 @@ export function HBody({
   }
 
   return (
-      <SImageBackground source={require('../../assets/background.jpg')} resizeMode="cover">
+      <HGradientBackground>
         <Animated.View style={[{ flex: 1 }, animatedStyles]}>
           {
             !!openSidebar && (
@@ -67,7 +68,7 @@ export function HBody({
           </HScrollArea>
           
         </Animated.View>
-      </SImageBackground>
+      </HGradientBackground>
   );
 };
 

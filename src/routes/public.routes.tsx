@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
-import { SignInPage } from 'pages/SignIn';
 import { PrivateRoutes } from './private.routes';
 import { RouterKey } from './routes';
+import { SignInPage } from 'pages/SignIn';
 
 const { Navigator, Screen } = createStackNavigator();
 

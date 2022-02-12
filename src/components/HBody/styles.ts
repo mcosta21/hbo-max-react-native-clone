@@ -9,7 +9,3 @@ export const HContent = styled.View`
 export const HScrollArea = styled.ScrollView`
     color: ${theme.colors.white};
 `
-
-export const SImageBackground = styled.ImageBackground`
-    flex: 1;
-`

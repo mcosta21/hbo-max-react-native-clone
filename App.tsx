@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { PublicRoutes } from './src/routes/public.routes';
 import { UserProvider } from './src/context/UserContext';
 
-import theme from 'styles/GlobalStyles';
+import theme from './src/styles/GlobalStyles';
 import { useFonts, Quicksand_400Regular, Quicksand_500Medium, Quicksand_700Bold } from '@expo-google-fonts/quicksand';
 
 export default function App() {
