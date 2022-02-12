@@ -3,5 +3,15 @@
   "compilerOptions": {
     "strict": true,
     "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "paths": {
+      "styles/*": ["./src/styles/*"],
+      "assets/*": ["./src/assets/*"],
+      "types/*": ["./src/types/*"],
+      "pages/*": ["./src/pages/*"],
+      "components/*": ["./src/components/*"],
+      "hooks/*": ["./src/hooks/*"],
+      "services/*": ["./src/services/*"],
+    }
   }
 }

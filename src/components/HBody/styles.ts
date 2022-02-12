@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import theme from '../../styles/styles';
+import theme from 'styles/GlobalStyles';
 
 export const HContent = styled.View`
     position: relative;

@@ -1,8 +1,7 @@
 import React, { ReactNode, useState } from 'react';
 import { Button, Text, TextInput, View } from 'react-native'
-import { TouchableOpacity } from 'react-native-gesture-handler';
-import { HBody } from '../../components/HBody';
-import { useUser } from '../../hooks/useUser';
+import { HBody } from 'components/HBody';
+import { useUser } from 'hooks/useUser';
 import { RouterKey } from '../../routes/routes';
 import { Container } from './styles';
 

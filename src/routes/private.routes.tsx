@@ -2,8 +2,8 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { RouterKey } from './routes';
 import { TabRoutes } from './tab.routes';
-import { HSidebarMenu } from '../components/HSidebarMenu';
-import { SettingsPage } from '../pages/Settings';
+import { HSidebarMenu } from 'components/HSidebarMenu';
+import { SettingsPage } from 'pages/Settings';
 
 
 const { Navigator, Screen } = createDrawerNavigator();

@@ -1,6 +1,6 @@
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
-import theme from '../../../styles/styles';
+import theme from 'styles/GlobalStyles';
 
 export function HTopGradientBackground() {
   return (

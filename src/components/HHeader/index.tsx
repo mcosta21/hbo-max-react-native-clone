@@ -2,7 +2,7 @@ import { Feather } from '@expo/vector-icons';
 import React from 'react';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Animated, { interpolateColor, useAnimatedStyle, useDerivedValue, withTiming } from 'react-native-reanimated';
-import theme from '../../styles/styles';
+import theme from 'styles/GlobalStyles';
 import { SContainer, SContent, SLeftSide, SLogo, SRightSide } from './styles';
 
 

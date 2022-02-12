@@ -1,6 +1,6 @@
 import { theMovieDbApi } from ".";
-import { Movie } from "../../types/movie.type";
-import { PageableTheMovieDb } from "../../types/pageable.type";
+import { Movie } from "types/movie.type";
+import { PageableTheMovieDb } from "types/pageable.type";
 
 const root = '/discover/movie';
 

@@ -1,8 +1,8 @@
 import React, { ReactNode, useEffect, useState } from "react";
-import { getPopularMovies } from "../../../../services/themoviedb/movie.api";
-import { getPopularTVShows } from "../../../../services/themoviedb/tvshow.api";
-import { Movie } from "../../../../types/movie.type";
-import { TVShow } from "../../../../types/tvshow.type";
+import { getPopularMovies } from "services/themoviedb/movie.api";
+import { getPopularTVShows } from "services/themoviedb/tvshow.api";
+import { Movie } from "types/movie.type";
+import { TVShow } from "types/tvshow.type";
 import { HBottomGradientBackground } from "../HBottomGrandientBackground";
 import { HExtraContext } from "../HExtraContext";
 import { HTopGradientBackground } from "../HTopGrandientBackground";

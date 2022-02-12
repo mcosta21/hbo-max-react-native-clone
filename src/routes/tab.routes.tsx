@@ -1,16 +1,12 @@
-import React from 'react';
+import { AntDesign, Feather, MaterialCommunityIcons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
-import theme from '../styles/styles';
-import { AntDesign, Feather, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
-import { NavigationContainer } from '@react-navigation/native';
-
-import { AccountPage } from '../pages/Account';
-import { HomePage } from '../pages/Home';
-
+import React from 'react';
 import { Platform } from 'react-native';
+import { AccountPage } from 'pages/Account';
+import { HomePage } from 'pages/Home';
+import { SearchPage } from 'pages/Search';
+import theme from 'styles/GlobalStyles';
 import { RouterKey } from './routes';
-import { SearchPage } from '../pages/Search';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 

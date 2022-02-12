@@ -1,14 +1,14 @@
 import { Ionicons } from '@expo/vector-icons';
 import {
-  DrawerContentComponentProps, DrawerContentScrollView
+  DrawerContentComponentProps
 } from '@react-navigation/drawer';
 import React from 'react';
 import { FlatList } from 'react-native';
+import theme from 'styles/GlobalStyles';
 import { RouterKey } from '../../routes/routes';
 import { HItemMenu } from './HItemMenu';
 import { options } from './menu';
 import { SContainer } from './styles';
-import theme from '../../styles/styles';
 
 export function HSidebarMenu(props: DrawerContentComponentProps ) {
 

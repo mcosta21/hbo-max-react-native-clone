@@ -1,8 +1,7 @@
 import React from 'react';
 
-import { TabRoutes } from './tab.routes';
 import { createStackNavigator } from '@react-navigation/stack';
-import { SignInPage } from '../pages/SignIn';
+import { SignInPage } from 'pages/SignIn';
 import { PrivateRoutes } from './private.routes';
 import { RouterKey } from './routes';
 

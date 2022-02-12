@@ -1,18 +1,13 @@
-import React, { useEffect } from "react";
-import { Button, Text } from "react-native";
-import { HBody } from "../../components/HBody";
 import { DrawerContentComponentProps } from '@react-navigation/drawer';
-import Animated, { useAnimatedStyle, useSharedValue, withTiming } from "react-native-reanimated";
-import styles from "../../styles/styles";
-import { useIsFocused } from "@react-navigation/native";
+import React from "react";
+import { Text } from "react-native";
+import { HBody } from "components/HBody";
 
 interface Props extends DrawerContentComponentProps {
 }
 
-
 export function AccountPage({ navigation }: Props) {
     
-      
     function openSidebar() {
         navigation.openDrawer();
     }
