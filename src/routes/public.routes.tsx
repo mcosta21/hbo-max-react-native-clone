@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { PrivateRoutes } from './private.routes';
 import { RouterKey } from './routes';
 import { SignInPage } from 'pages/SignIn';
+import { SignOutPage } from 'pages/SignOut';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -15,6 +16,7 @@ export function PublicRoutes() {
     return (
       <Navigator screenOptions={tabBarOptions} initialRouteName={RouterKey.SignInPage}>
         <Screen name={RouterKey.SignInPage}  component={SignInPage} />
+        <Screen name={RouterKey.SignOutPage}  component={SignOutPage} />
         <Screen name={RouterKey.PrivateRoutes}  component={PrivateRoutes} />
       </Navigator>
     )

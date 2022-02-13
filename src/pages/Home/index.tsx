@@ -19,6 +19,7 @@ export function HomePage({ navigation }: Props) {
     const [movies, setMovies] = useState<PageableTheMovieDb<Movie>>(new PageableTheMovieDb());
 
     function openSidebar() {
+        console.log('open sidebar')
         navigation.openDrawer();
     }
 

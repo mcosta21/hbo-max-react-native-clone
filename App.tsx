@@ -7,6 +7,7 @@ import { UserProvider } from './src/context/UserContext';
 
 import theme from './src/styles/GlobalStyles';
 import { useFonts, Quicksand_400Regular, Quicksand_500Medium, Quicksand_700Bold } from '@expo-google-fonts/quicksand';
+import { TabProvider } from './src/context/TabContext';
 
 export default function App() {
 
@@ -22,10 +23,12 @@ export default function App() {
 
   return (
     <UserProvider>
-      <NavigationContainer>
-        <PublicRoutes />
-        <StatusBar style="light" backgroundColor={theme.colors.black_0} />
-      </NavigationContainer>
+      <TabProvider>
+        <NavigationContainer>
+          <PublicRoutes />
+          <StatusBar style="light" backgroundColor={theme.colors.black_0} />
+        </NavigationContainer>
+      </TabProvider>
     </UserProvider>
   );
 }

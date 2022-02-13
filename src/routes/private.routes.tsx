@@ -5,7 +5,6 @@ import { TabRoutes } from './tab.routes';
 import { HSidebarMenu } from 'components/HSidebarMenu';
 import { SettingsPage } from 'pages/Settings';
 
-
 const { Navigator, Screen } = createDrawerNavigator();
 
 const tabBarOptions = {

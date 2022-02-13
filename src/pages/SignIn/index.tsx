@@ -4,13 +4,14 @@ import { HBody } from 'components/HBody';
 import { useUser } from 'hooks/useUser';
 import { RouterKey } from '../../routes/routes';
 import { Container } from './styles';
+import { StackHeaderProps } from '@react-navigation/stack';
+import { HGradientBackground } from 'components/HGradientBackground';
 
-interface SignInProps {
+interface Props extends StackHeaderProps {
   children: ReactNode;
-  navigation: any;
 }
 
-export function SignInPage({ children, navigation }: SignInProps) {
+export function SignInPage({ children, navigation }: Props) {
 
   const { login } = useUser();
 
@@ -22,12 +23,11 @@ export function SignInPage({ children, navigation }: SignInProps) {
       // await login(email, password);
       navigation.navigate(RouterKey.PrivateRoutes);
     } catch (error) {
-      alert(error);
     }
   }
 
   return (
-    <HBody useSafeAreaHeader>
+    <HGradientBackground>
         <Container>
           <TextInput
             placeholder="Username"
@@ -42,13 +42,11 @@ export function SignInPage({ children, navigation }: SignInProps) {
             secureTextEntry
             style={{ backgroundColor: '#fff', height: 60 }}
           />
-          <View style={{ height: 100, backgroundColor: 'gray'}}>
-            <Button title="Entrar" onPress={() => handleSignIn(username, password)}>
-            </Button >
-          </View>
+          <Button title="Entrar" onPress={() => handleSignIn(username, password)}>
+          </Button >
 
         </Container>
-    </HBody>
+    </HGradientBackground>
     
   );
 };
