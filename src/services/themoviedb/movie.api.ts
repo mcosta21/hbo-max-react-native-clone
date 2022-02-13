@@ -8,7 +8,6 @@ export async function getMovies(): Promise<PageableTheMovieDb<Movie>> {
 
     const params = {
         api_key: 'b9183c5c2d36811f09ae74cc21f99e94',
-        language: 'pt-BR',
         with_watch_providers: 384,
         watch_region: 'BR',
         page: 1
@@ -22,7 +21,6 @@ export async function getPopularMovies(): Promise<PageableTheMovieDb<Movie>> {
 
     const params = {
         api_key: 'b9183c5c2d36811f09ae74cc21f99e94',
-        language: 'pt-BR',
         with_watch_providers: 384,
         watch_region: 'BR',
         sort_by: 'realease_date.desc',

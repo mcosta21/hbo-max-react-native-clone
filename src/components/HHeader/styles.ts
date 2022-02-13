@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 
 export const SContainer = styled.View`
     width: 100%;
-    height: ${Platform.OS === 'ios' ? '104px' : '84px'};
+    height: ${Platform.OS === 'ios' ? 104 : 84}px;
 
     position: absolute;
     z-index: 1;
