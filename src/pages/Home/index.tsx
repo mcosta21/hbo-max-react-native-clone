@@ -8,6 +8,7 @@ import { getMovies } from "services/themoviedb/movie.api";
 import { Movie } from "types/movie.type";
 import { PageableTheMovieDb } from "types/pageable.type";
 import { HHighlightPanel } from "./components/HHighlightPanel";
+import { HLoading } from 'components/HLoading';
 
 
 interface Props extends DrawerContentComponentProps {
@@ -15,7 +16,6 @@ interface Props extends DrawerContentComponentProps {
 
 export function HomePage({ navigation }: Props) {
 
-    const { user } = useUser();
     const [movies, setMovies] = useState<PageableTheMovieDb<Movie>>(new PageableTheMovieDb());
 
     function openSidebar() {
@@ -30,6 +30,10 @@ export function HomePage({ navigation }: Props) {
     async function getMoviesData() {
         const data = await getMovies();
         setMovies(data);
+    }
+
+    if(movies.results.length === 0) {
+        return <HLoading />
     }
 
     return (

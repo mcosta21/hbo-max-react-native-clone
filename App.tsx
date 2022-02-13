@@ -8,6 +8,7 @@ import { UserProvider } from './src/context/UserContext';
 import theme from './src/styles/GlobalStyles';
 import { useFonts, Quicksand_400Regular, Quicksand_500Medium, Quicksand_700Bold } from '@expo-google-fonts/quicksand';
 import { TabProvider } from './src/context/TabContext';
+import { HLoading } from 'components/HLoading';
 
 export default function App() {
 
@@ -18,7 +19,7 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <HLoading />;
   }
 
   return (

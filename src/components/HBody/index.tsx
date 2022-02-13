@@ -23,7 +23,7 @@ export function HBody({
   const navigation = useNavigation();
   const { currentTabIndex, previousTabIndex } = useTabNavigation();
 
-  const offset = useSharedValue(400);
+  const offset = useSharedValue(0);
   
   const animatedStyles = useAnimatedStyle(() => {
     return {
@@ -33,11 +33,11 @@ export function HBody({
 
   useEffect(() => {
       if(previousTabIndex >= currentTabIndex) {
-          offset.value = 400;
+          offset.value = -400;
           offset.value = withTiming(0, { duration: 500 });
       }    
         else {
-          offset.value = -400;
+          offset.value = 400;
           offset.value = withTiming(0, { duration: 500 });
       }
   }, [navigation.getState()]);

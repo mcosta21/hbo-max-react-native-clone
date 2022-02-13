@@ -13,27 +13,20 @@ export function SignOutPage({ navigation }: Props) {
 
   useEffect(() => {
     // DO LOGOUT
-    /*
     setTimeout(() => {
       navigation.navigate(RouterKey.SignInPage);
     }, 1500);
-    */
   }, []);
 
 
-  /*
-      <HGradientBackground>
-          <Container>
-            <Text>
-              Loading logout
-            </Text>
-          </Container>
-      </HGradientBackground>
-      
-        */
-
   return (
-    <HLoading />
+    <HGradientBackground>
+        <Container>
+          <Text>
+            Loading logout
+          </Text>
+        </Container>
+    </HGradientBackground>
   );
 };
 

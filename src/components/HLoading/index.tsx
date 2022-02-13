@@ -2,7 +2,8 @@ import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { Text } from "react-native";
 import theme from 'styles/GlobalStyles';
-import { SLogo } from "./styles";
+import { SLogo, SSpacing } from "./styles";
+import { HLoadingDots } from "components/HLoadingDots";
 
 export function HLoading(){
     return (
@@ -15,10 +16,13 @@ export function HLoading(){
             style={{ 
                 flex: 1,
                 alignItems: 'center', 
-                justifyContent: 'center' 
+                justifyContent: 'flex-end' 
             }}
         >
             <SLogo source={require("assets/logo-secundary.png")} resizeMode="contain" />
+            <SSpacing>
+                <HLoadingDots />
+            </SSpacing>
         </LinearGradient>
     )
 }
