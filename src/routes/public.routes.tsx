@@ -2,7 +2,7 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 import { PrivateRoutes } from './private.routes';
-import { RouterKey } from './routes';
+import { RouterKey } from './routes-keys';
 import { SignInPage } from 'pages/SignIn';
 import { SignOutPage } from 'pages/SignOut';
 

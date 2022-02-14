@@ -12,6 +12,7 @@ export const STitleContainer = styled.View`
     align-items: center;
     width: 100%;
     margin-bottom: 4px;
+    padding-right: 12px;
 `;
 
 export const STitleList = styled.Text`
@@ -20,16 +21,18 @@ export const STitleList = styled.Text`
     font-size: 18px; 
     margin-left: 6px; 
     font-weight: 700;
-    margin-right: 8px;
-    text-align: left;
+`;
+
+export const SSubtitleContainer = styled.View`
+    margin-bottom: 4px;
+    padding-right: 12px;
 `;
 
 export const SSubtitleList = styled.Text`
     color: ${theme.colors.white};
     font-size: 13px; 
-    margin-left: 6px; 
-    margin-bottom: 4px;
     font-weight: 400;
+    margin-left: 6px; 
     width: 100%;
     opacity: 0.9;
 `;

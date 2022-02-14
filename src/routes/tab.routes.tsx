@@ -6,7 +6,7 @@ import { AccountPage } from 'pages/Account';
 import { HomePage } from 'pages/Home';
 import { SearchPage } from 'pages/Search';
 import theme from 'styles/GlobalStyles';
-import { RouterKey } from './routes';
+import { RouterKey } from './routes-keys';
 import { useNavigation } from '@react-navigation/native';
 import { useTabNavigation } from 'hooks/useTabNavigation';
 

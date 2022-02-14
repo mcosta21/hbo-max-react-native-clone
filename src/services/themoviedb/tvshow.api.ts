@@ -4,11 +4,9 @@ import { TVShow } from "types/tvshow.type";
 
 const root = '/discover/tv';
 
-export async function getMovies(): Promise<PageableTheMovieDb<TVShow>> {
+export async function getTvShows(): Promise<PageableTheMovieDb<TVShow>> {
 
     const params = {
-        with_watch_providers: 384,
-        watch_region: 'BR',
         page: 1
     };
 
@@ -16,14 +14,23 @@ export async function getMovies(): Promise<PageableTheMovieDb<TVShow>> {
     return response.data;
 }
 
-export async function getPopularTVShows(): Promise<PageableTheMovieDb<TVShow>> {
+export async function getPopularTVShows(page: number = 1): Promise<PageableTheMovieDb<TVShow>> {
 
     const params = {
-        with_watch_providers: 384,
-        watch_region: 'BR',
-        sort_by: 'realease_date.desc',
+        sort_by: 'vote_average.desc',
         primary_release_year: 2022,
-        page: 1
+        page
+    };
+
+    const response = await theMovieDbApi.get<PageableTheMovieDb<TVShow>>(root, { params });
+    return response.data;
+}
+
+export async function getTvShowsByKeywords(keywords: Array<string>, page: number = 1): Promise<PageableTheMovieDb<TVShow>> {
+
+    const params = {
+        with_keywords: keywords.join(','),
+        page
     };
 
     const response = await theMovieDbApi.get<PageableTheMovieDb<TVShow>>(root, { params });

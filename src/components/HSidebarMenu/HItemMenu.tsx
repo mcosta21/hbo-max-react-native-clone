@@ -1,7 +1,7 @@
 
 import { Text } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { RouterKey } from '../../routes/routes';
+import { RouterKey } from '../../routes/routes-keys';
 
 import { OptionMenu } from './menu';
 

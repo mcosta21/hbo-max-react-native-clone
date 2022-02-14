@@ -1,4 +1,4 @@
-import { RouterKey } from '../../routes/routes';
+import { RouterKey } from '../../routes/routes-keys';
 
 export interface OptionMenu {
     name: RouterKey;

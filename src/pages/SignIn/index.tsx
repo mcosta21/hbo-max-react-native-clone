@@ -2,7 +2,7 @@ import React, { ReactNode, useState } from 'react';
 import { Button, Text, TextInput, View } from 'react-native'
 import { HBody } from 'components/HBody';
 import { useUser } from 'hooks/useUser';
-import { RouterKey } from '../../routes/routes';
+import { RouterKey } from '../../routes/routes-keys';
 import { Container } from './styles';
 import { StackHeaderProps } from '@react-navigation/stack';
 import { HGradientBackground } from 'components/HGradientBackground';

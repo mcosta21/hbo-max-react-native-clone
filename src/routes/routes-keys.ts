@@ -6,5 +6,6 @@ export enum RouterKey {
     Sidebar = 'Sidebar',
     SettingsPage = "Settings",
     SignInPage = "SignIn",
-    SignOutPage = "SignOut"
+    SignOutPage = "SignOut",
+    DetailItemPage = "DetailItem",
 }

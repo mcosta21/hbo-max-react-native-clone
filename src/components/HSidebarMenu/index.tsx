@@ -2,10 +2,9 @@ import { Ionicons } from '@expo/vector-icons';
 import {
   DrawerContentComponentProps
 } from '@react-navigation/drawer';
-import React from 'react';
 import { FlatList } from 'react-native';
 import theme from 'styles/GlobalStyles';
-import { RouterKey } from '../../routes/routes';
+import { RouterKey } from '../../routes/routes-keys';
 import { HItemMenu } from './HItemMenu';
 import { options } from './menu';
 import { SContainer } from './styles';

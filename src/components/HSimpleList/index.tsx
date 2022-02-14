@@ -1,6 +1,6 @@
 import React from "react";
 import { View, FlatList, ListRenderItem } from "react-native";
-import { SContainer, SSubtitleList, STitleContainer, STitleList } from "./styles";
+import { SContainer, SSubtitleContainer, SSubtitleList, STitleContainer, STitleList } from "./styles";
 
 interface Props {
     
@@ -33,18 +33,15 @@ export function HSimpleList({
                 </STitleContainer>
             )}
             { !!subtitle && (
-                <SSubtitleList 
-                    style={{ 
-                        textAlign, 
-                        paddingRight: textAlign === 'left' ? 30 : 38,
-                        paddingLeft: textAlign === 'center' ? 30 : 0
-                    }}
-                >
-                    {subtitle}
-                </SSubtitleList>
+                <SSubtitleContainer>
+                    <SSubtitleList style={{ textAlign, paddingHorizontal: textAlign === 'center' ? 32 : 0 }}>
+                        {subtitle}
+                    </SSubtitleList>
+                </SSubtitleContainer>
             )}
             <FlatList
                 style={{ marginTop: 8 }}
+                showsHorizontalScrollIndicator={false}
                 data={items}
                 renderItem={renderItem}
                 keyExtractor={(key, index) => index.toString()}

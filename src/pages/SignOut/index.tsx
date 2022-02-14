@@ -3,7 +3,7 @@ import { HGradientBackground } from 'components/HGradientBackground';
 import { HLoading } from 'components/HLoading';
 import React, { useEffect } from 'react';
 import { Text } from 'react-native';
-import { RouterKey } from '../../routes/routes';
+import { RouterKey } from '../../routes/routes-keys';
 import { Container } from './styles';
 
 interface Props extends StackHeaderProps {
