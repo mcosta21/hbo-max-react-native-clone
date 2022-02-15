@@ -4,9 +4,10 @@ import theme from 'styles/GlobalStyles';
 
 interface Props {
   children: ReactNode;
+  height?: number;
 }
 
-export function HBottomGradientBackground({ children }: Props) {
+export function HBottomGradientBackground({ children, height = 80 }: Props) {
   return (
     <LinearGradient
         colors={[
@@ -14,7 +15,7 @@ export function HBottomGradientBackground({ children }: Props) {
           theme.colors.black_0,
         ]}
         style={{ 
-          height: '80%', 
+          height: `${height}%`, 
           paddingBottom: 30, 
           alignItems: 'center', 
           justifyContent: 'flex-end' 

@@ -1,6 +1,6 @@
 import { theMovieDbApi } from ".";
 import { Movie } from "types/movie.type";
-import { PageableTheMovieDb } from "types/pageable.type";
+import { PageableTheMovieDb } from "types/global.type";
 
 const root = '/discover/movie';
 
@@ -45,5 +45,11 @@ export async function getMoviesByKeywords(keywords: Array<string>, page: number 
     };
 
     const response = await theMovieDbApi.get<PageableTheMovieDb<Movie>>(root, { params });
+    return response.data;
+}
+
+export async function getMovieById(id: number): Promise<Movie> {
+    console.log(id)
+    const response = await theMovieDbApi.get<Movie>(`/movie/${id}`);
     return response.data;
 }

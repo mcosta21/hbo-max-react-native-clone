@@ -4,16 +4,17 @@ import theme from 'styles/GlobalStyles';
 
 interface Props {
     children: ReactNode;
+    height?: number;
 }
 
-export function HExtraContext({ children }: Props){
+export function HTopGrandientBackground({ children, height }: Props){
     return (
         <LinearGradient
             colors={[
                 theme.colors.black_0,
                 'transparent',
             ]}
-            style={{ flex: 1, paddingTop: 15 }}
+            style={{ paddingTop: 15, height: !!height ? `${height}%` : '100%' }}
         >
                 {children}
         </LinearGradient>

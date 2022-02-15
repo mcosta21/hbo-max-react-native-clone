@@ -1,16 +1,6 @@
+import { ItemDetail } from './global.type';
 
-export interface TVShow {
-    backdrop_path: string;
-    first_air_date: Date;
-    genre_ids: Array<number>;
-    id: number;
-    original_language: string;
-    original_name: string;
-    overview: string;
-    origin_country: Array<string>;
-    popularity: number;
-    poster_path: string;
+export interface TVShow extends ItemDetail {
     name: string;
-    vote_average: number;
-    vote_count: number;
+    first_air_date: Date;
 }

@@ -1,8 +1,7 @@
 import { LinearGradient } from "expo-linear-gradient";
-import React from "react";
 import theme from 'styles/GlobalStyles';
 
-export function HTopGradientBackground() {
+export function HHeaderGrandientBackground() {
   return (
     <LinearGradient
         colors={[theme.colors.black_2, 'transparent']}

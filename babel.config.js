@@ -14,6 +14,7 @@ module.exports = function(api) {
             pages: './src/pages',
             hooks: './src/hooks',
             services: './src/services',
+            routes: './src/routes',
           },
         },
       ],

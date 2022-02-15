@@ -1,5 +1,5 @@
 import { theMovieDbApi } from ".";
-import { PageableTheMovieDb } from 'types/pageable.type';
+import { PageableTheMovieDb } from 'types/global.type';
 import { TVShow } from "types/tvshow.type";
 
 const root = '/discover/tv';
@@ -34,5 +34,11 @@ export async function getTvShowsByKeywords(keywords: Array<string>, page: number
     };
 
     const response = await theMovieDbApi.get<PageableTheMovieDb<TVShow>>(root, { params });
+    return response.data;
+}
+
+export async function getTvShowById(id: number): Promise<TVShow> {
+    console.log(id)
+    const response = await theMovieDbApi.get<TVShow>(`/tv/${id}`);
     return response.data;
 }

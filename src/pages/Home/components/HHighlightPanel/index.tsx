@@ -3,9 +3,9 @@ import { getPopularMovies } from "services/themoviedb/movie.api";
 import { getPopularTVShows } from "services/themoviedb/tvshow.api";
 import { Movie } from "types/movie.type";
 import { TVShow } from "types/tvshow.type";
-import { HBottomGradientBackground } from "../HBottomGrandientBackground";
-import { HExtraContext } from "../HExtraContext";
-import { HTopGradientBackground } from "../HTopGrandientBackground";
+import { HBottomGradientBackground } from "../../../../components/HBottomGrandientBackground";
+import { HTopGrandientBackground } from "../../../../components/HTopGrandientBackground";
+import { HHeaderGrandientBackground } from "../HHeaderGrandientBackground";
 import { SContainer, SHighlightSubtitle, SHighlightTitle, SImageBackground } from "./styles";
 
 interface Props {
@@ -60,7 +60,7 @@ export function HHighlightPanel({ children }: Props){
     return (
         <SContainer>
             <SImageBackground source={getImage()}>
-                <HTopGradientBackground />
+                <HHeaderGrandientBackground />
                 <HBottomGradientBackground>
 
                     <SHighlightTitle>
@@ -73,9 +73,9 @@ export function HHighlightPanel({ children }: Props){
                     
                 </HBottomGradientBackground>
             </SImageBackground>
-            <HExtraContext>
+            <HTopGrandientBackground>
                 {children}
-            </HExtraContext>
+            </HTopGrandientBackground>
         </SContainer>
     )
 }

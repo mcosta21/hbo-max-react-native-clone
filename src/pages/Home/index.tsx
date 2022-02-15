@@ -5,7 +5,7 @@ import { HBody } from "components/HBody";
 import { HSimpleList } from "components/HSimpleList";
 import { getIconicMovies, getMovies, getMoviesByKeywords, getPopularMovies } from "services/themoviedb/movie.api";
 import { Movie } from "types/movie.type";
-import { PageableTheMovieDb } from "types/pageable.type";
+import { PageableTheMovieDb } from "types/global.type";
 import { HHighlightPanel } from "./components/HHighlightPanel";
 import { HLoading } from 'components/HLoading';
 import { Feather } from '@expo/vector-icons';
@@ -18,6 +18,7 @@ import { HLongPortraitItem } from 'components/Items/HLongPortraitItem';
 import { HHighlightItem } from 'components/Items/HHighlightItem';
 import { TVShow } from 'types/tvshow.type';
 import { getPopularTVShows, getTvShowsByKeywords } from 'services/themoviedb/tvshow.api';
+import { RouterKey } from 'routes/routes-keys';
 
 interface Props extends DrawerContentComponentProps {
 }
@@ -73,6 +74,10 @@ export function HomePage({ navigation }: Props) {
         console.log('navigate to my list')
     }
 
+    function handleShowDetailItem(id: number, type: 'movie' | 'tv' = 'movie'){
+        navigation.navigate(RouterKey.DetailItemPage, { id, type });
+    }
+
     if(movies.results.length === 0) {
         return <HLoading />
     }
@@ -85,8 +90,9 @@ export function HomePage({ navigation }: Props) {
                     items={movies.results}
                     renderItem={({ item }) => (
                         <HLandscapeItem 
-                            key={item.id} 
+                            id={item.id} 
                             image={item.backdrop_path}
+                            onPress={handleShowDetailItem}
                         />
                     )}
                 />
@@ -98,8 +104,9 @@ export function HomePage({ navigation }: Props) {
                 items={iconicMovies}
                 renderItem={({item}) => (
                     <HPortraitItem 
-                        key={item.id} 
+                        id={item.id} 
                         image={item.poster_path}
+                        onPress={handleShowDetailItem}
                     />
                 )}
             />
@@ -111,9 +118,10 @@ export function HomePage({ navigation }: Props) {
                 renderIconTitle={<Feather name="chevron-right" size={16} color={theme.colors.white} />}
                 renderItem={({item}) => (
                     <HSquareItem 
-                        key={item.id} 
+                        id={item.id} 
                         image={item.backdrop_path}
                         title={item.title}
+                        onPress={handleShowDetailItem}
                     />
                 )}
             />
@@ -125,9 +133,10 @@ export function HomePage({ navigation }: Props) {
                 renderIconTitle={<Feather name="chevron-right" size={16} color={theme.colors.white} />}
                 renderItem={({item}) => (
                     <HLongLandscapeItem 
-                        key={item.id} 
+                        id={item.id} 
                         image={item.backdrop_path}
                         title={item.title}
+                        onPress={handleShowDetailItem}
                     />
                 )}
             />
@@ -139,10 +148,11 @@ export function HomePage({ navigation }: Props) {
                 items={popularMoviesTvShows}
                 renderItem={({item, index}) => (
                     <HPortraitItem 
-                        key={item.id} 
+                        id={item.id} 
                         image={item.poster_path}
                         title={index % 2 === 0 ? 'HBO' : undefined}
                         position={index + 1}
+                        onPress={(id: number) => handleShowDetailItem(id, item.title ? 'movie' : 'tv')}
                     />
                 )}
             />
@@ -154,8 +164,9 @@ export function HomePage({ navigation }: Props) {
                 renderIconTitle={<Feather name="chevron-right" size={16} color={theme.colors.white} />}
                 renderItem={({item}) => (
                     <HLongPortraitItem 
-                        key={item.id} 
+                        id={item.id} 
                         image={item.backdrop_path}
+                        onPress={handleShowDetailItem}
                     />
                 )}
             />
@@ -164,8 +175,10 @@ export function HomePage({ navigation }: Props) {
                !!highlightMovie && (
                     <HHighlightItem 
                         title={highlightMovie.title}
+                        id={highlightMovie.id}
                         subtitle={highlightMovie.overview}
                         image={highlightMovie.backdrop_path}
+                        onPress={handleShowDetailItem}
                     />
                )
             }
@@ -175,8 +188,9 @@ export function HomePage({ navigation }: Props) {
                 items={movies.results}
                 renderItem={({ item }) => (
                     <HLandscapeItem 
-                        key={item.id} 
+                        id={item.id} 
                         image={item.backdrop_path}
+                        onPress={handleShowDetailItem}
                     />
                 )}
             />
@@ -186,8 +200,9 @@ export function HomePage({ navigation }: Props) {
                 items={dcMoviesTvShows}
                 renderItem={({ item }) => (
                     <HPortraitItem 
-                        key={item.id} 
+                        id={item.id} 
                         image={item.poster_path}
+                        onPress={(id: number) => handleShowDetailItem(id, item.title ? 'movie' : 'tv')}
                     />
                 )}
             />
