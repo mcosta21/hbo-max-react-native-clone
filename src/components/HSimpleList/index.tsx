@@ -3,7 +3,6 @@ import { View, FlatList, ListRenderItem } from "react-native";
 import { SContainer, SSubtitleContainer, SSubtitleList, STitleContainer, STitleList } from "./styles";
 
 interface Props {
-    
     title?: string;
     subtitle?: string;
     items: Array<any>;
@@ -28,8 +27,8 @@ export function HSimpleList({
                 <STitleContainer>
                     <STitleList onPress={onPressTitle} style={{ textAlign }}>
                         {title}
+                        <View style={{ paddingLeft: 6 }}>{renderIconTitle}</View>
                     </STitleList>
-                    {renderIconTitle}
                 </STitleContainer>
             )}
             { !!subtitle && (

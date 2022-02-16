@@ -40,7 +40,7 @@ export const SMoreOptions = styled.View`
 
 export const SContentItem = styled.View`
     padding-horizontal: 18px;
-    margin-top: -22px;
+    margin-top: -20px;
     margin-bottom: 20px;
 `;
 

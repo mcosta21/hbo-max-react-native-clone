@@ -84,7 +84,7 @@ export function HomePage({ navigation }: Props) {
 
     return (
         <HBody openSidebar={openSidebar}>
-            <HHighlightPanel>
+            <HHighlightPanel onPress={handleShowDetailItem}>
                 <HSimpleList
                     title="Just For You"
                     items={movies.results}
@@ -165,7 +165,7 @@ export function HomePage({ navigation }: Props) {
                 renderItem={({item}) => (
                     <HLongPortraitItem 
                         id={item.id} 
-                        image={item.backdrop_path}
+                        image={item.poster_path}
                         onPress={handleShowDetailItem}
                     />
                 )}

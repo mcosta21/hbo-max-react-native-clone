@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect, useState } from "react";
+import { TouchableHighlight } from "react-native-gesture-handler";
 import { getPopularMovies } from "services/themoviedb/movie.api";
 import { getPopularTVShows } from "services/themoviedb/tvshow.api";
 import { Movie } from "types/movie.type";
@@ -10,11 +11,12 @@ import { SContainer, SHighlightSubtitle, SHighlightTitle, SImageBackground } fro
 
 interface Props {
     children: ReactNode;
+    onPress?: (id: number, type?: 'movie' | 'tv') => void;
 }
 
 const highlightType = ['movie', 'tv'];
 
-export function HHighlightPanel({ children }: Props){
+export function HHighlightPanel({ children, onPress }: Props){
 
     const [movie, setMovie] = useState<Movie>();
     const [tvShow, setTvShow] = useState<TVShow>();
@@ -59,20 +61,24 @@ export function HHighlightPanel({ children }: Props){
 
     return (
         <SContainer>
-            <SImageBackground source={getImage()}>
-                <HHeaderGrandientBackground />
-                <HBottomGradientBackground>
 
-                    <SHighlightTitle>
-                        {!!movie ? movie.title : tvShow?.name}
-                    </SHighlightTitle>
+            <TouchableHighlight onPress={() => !!onPress && onPress(!!movie ? movie.id : (!!tvShow ? tvShow.id : 0), !!movie ? 'movie' : 'tv')}>
+                <SImageBackground source={getImage()}>
+                    <HHeaderGrandientBackground />
+                    <HBottomGradientBackground>
 
-                    <SHighlightSubtitle>
-                        {getOverview()}
-                    </SHighlightSubtitle>
-                    
-                </HBottomGradientBackground>
-            </SImageBackground>
+                        <SHighlightTitle>
+                            {!!movie ? movie.title : tvShow?.name}
+                        </SHighlightTitle>
+
+                        <SHighlightSubtitle>
+                            {getOverview()}
+                        </SHighlightSubtitle>
+                        
+                    </HBottomGradientBackground>
+                </SImageBackground>
+            </TouchableHighlight>
+            
             <HTopGrandientBackground>
                 {children}
             </HTopGrandientBackground>

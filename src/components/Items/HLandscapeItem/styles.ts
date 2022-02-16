@@ -6,6 +6,7 @@ export const STitle = styled.Text`
     margin-left: 6px;
     margin-top: 6px;
     max-width: 220px;
+    opacity: 0.8;
 `
 
 export const SImage = styled.Image`

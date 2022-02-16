@@ -13,6 +13,7 @@ interface Props extends ViewProps {
   goBack?: () => void;
   useSafeAreaHeader?: boolean;
   showHeader?: boolean;
+  customHeaderContent?: JSX.Element;
   title?: string;
 }
 
@@ -22,6 +23,7 @@ export function HBody({
   goBack,
   useSafeAreaHeader = false,
   showHeader = true,
+  customHeaderContent,
   title,
   ...rest
 }: Props) {
@@ -78,6 +80,7 @@ export function HBody({
                 goBack={goBack} 
                 title={title}
                 showBackgroundAndTextHeader={showBackgroundAndTextHeader} 
+                customContent={customHeaderContent}
               />
             )
           }
@@ -85,8 +88,9 @@ export function HBody({
             ref={scrollViewRef}
             scrollEventThrottle={16} 
             onScroll={handleScroll}
+            style={{ flex: 1 }}
           >
-            <HContent style={{ top: useSafeAreaHeader ? getTop() : 0 }}>
+            <HContent style={{ paddingTop: useSafeAreaHeader ? getTop() : 0 }}>
                 { children }
             </HContent>
           </ScrollView>

@@ -1,15 +1,15 @@
 import { Feather } from '@expo/vector-icons';
-import { Text } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Animated, { interpolateColor, useAnimatedStyle, useDerivedValue, withTiming } from 'react-native-reanimated';
 import theme from 'styles/GlobalStyles';
-import { SCenter, SContainer, SContent, SLeftSide, SLogo, SRightSide, STitle } from './styles';
+import { SContainer, SContent, SLeftSide, SLogo, SRightSide, STitle } from './styles';
 
 interface Props {
   openSidebar?: () => void;
   goBack?: () => void;
   showBackgroundAndTextHeader: boolean;
   title?: string;
+  customContent?: JSX.Element;
 }
 
 export function HHeader({ 
@@ -17,6 +17,7 @@ export function HHeader({
     goBack,
     title,
     showBackgroundAndTextHeader,
+    customContent,
 }: Props) {
 
   const animationHeaderProgress = useDerivedValue(() => {
@@ -51,33 +52,45 @@ export function HHeader({
     <SContainer>
       <Animated.View style={[backgroundStyle]}>
         <SContent>
-          <SLeftSide>
-            {
-              !!openSidebar && (
-                <TouchableOpacity>
-                  <Feather name="menu" size={26} color={theme.colors.white} onPress={() => openSidebar()} />
-                </TouchableOpacity>
-              )
-            }
-            
-            {
-              !!goBack && (
-                <TouchableOpacity>
-                  <Feather name="chevron-left" size={26} color={theme.colors.white} onPress={() => goBack()} />
-                </TouchableOpacity>
-              )
-            }
-          </SLeftSide>
 
           {
-            !!title ? (
-              <STitle style={[colorStyle]}>{title.length > 40 ? `${title.substring(0, 40)}...` : title}</STitle>
-            ) : (
-              <SLogo source={require("assets/logo.png")} resizeMode="contain" />
-            )
+            !!customContent && (customContent)
           }
 
-          <SRightSide />
+          {
+            !customContent && (
+              <>
+                <SLeftSide>
+                  {
+                    !!openSidebar && (
+                      <TouchableOpacity onPress={() => openSidebar()}>
+                        <Feather name="menu" size={26} color={theme.colors.white} />
+                      </TouchableOpacity>
+                    )
+                  }
+                  
+                  {
+                    !!goBack && (
+                      <TouchableOpacity onPress={() => goBack()} >
+                        <Feather name="chevron-left" size={26} color={theme.colors.white} />
+                      </TouchableOpacity>
+                    )
+                  }
+                </SLeftSide>
+
+                {
+                  !!title ? (
+                    <STitle style={[colorStyle]}>{title.length > 40 ? `${title.substring(0, 40)}...` : title}</STitle>
+                  ) : (
+                    <SLogo source={require("assets/logo.png")} resizeMode="contain" />
+                  )
+                }
+
+                <SRightSide />
+              </>
+            )
+          }
+          
         </SContent>
       </Animated.View>
     </SContainer>

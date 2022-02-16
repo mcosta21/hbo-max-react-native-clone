@@ -23,7 +23,7 @@ export const SSubtitleList = styled.Text`
     font-weight: 400;
     width: 100%;
     padding-horizontal: 20px;
-    opacity: 0.9;
+    opacity: 0.8;
 `;
 
 export const SImage = styled.Image`

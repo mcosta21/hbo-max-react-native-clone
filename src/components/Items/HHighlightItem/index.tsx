@@ -21,17 +21,20 @@ export function HHighlightItem({
     const safeSubtitle = !!subtitle && subtitle.length > 100 ? `${subtitle.substring(0, 100)}...` : subtitle;
 
     return (
-        <TouchableOpacity onPress={() => !!onPress && onPress(id)}>
             <View style={{ paddingVertical: 30 }}>
-                <SImage source={{ uri: `https://image.tmdb.org/t/p/w500${image}` }} />
+                <TouchableOpacity onPress={() => !!onPress && onPress(id)}>
+                    <SImage source={{ uri: `https://image.tmdb.org/t/p/w500${image}` }} />
+                </TouchableOpacity>
+
                 {
                     !!title && <STitle style={{ textAlign: textAlign }}>{safeTitle}</STitle>
                 }
+
                 { !!subtitle && <SSubtitleList style={{ textAlign: textAlign }}>{safeSubtitle}</SSubtitleList>}
-                <SButtonContainer>
-                    <HPrimaryButton title="Explore hub" width={180} />
+                
+                <SButtonContainer >
+                    <HPrimaryButton title="Explore hub" width={180} onPress={() => !!onPress && onPress(id)} />
                 </SButtonContainer>
             </View>
-        </TouchableOpacity>
     )
 }

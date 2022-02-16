@@ -34,6 +34,6 @@ export const SSubtitleList = styled.Text`
     font-weight: 400;
     margin-left: 6px; 
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.8;
 `;
 

@@ -38,7 +38,6 @@ export async function getTvShowsByKeywords(keywords: Array<string>, page: number
 }
 
 export async function getTvShowById(id: number): Promise<TVShow> {
-    console.log(id)
     const response = await theMovieDbApi.get<TVShow>(`/tv/${id}`);
     return response.data;
 }

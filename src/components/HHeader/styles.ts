@@ -9,7 +9,7 @@ export const SContainer = styled.View`
     height: ${Platform.OS === 'ios' ? 104 : 84}px;
 
     position: absolute;
-    z-index: 1;
+    z-index: 100;
 `;
 
 export const SContent = styled.View`

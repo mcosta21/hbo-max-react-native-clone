@@ -49,7 +49,6 @@ export async function getMoviesByKeywords(keywords: Array<string>, page: number 
 }
 
 export async function getMovieById(id: number): Promise<Movie> {
-    console.log(id)
     const response = await theMovieDbApi.get<Movie>(`/movie/${id}`);
     return response.data;
 }
