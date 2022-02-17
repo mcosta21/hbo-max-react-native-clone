@@ -1,17 +1,22 @@
-import { ReactNode } from 'react';
-import { Text } from 'react-native'
+import { DrawerContentComponentProps } from '@react-navigation/drawer';
+import { HBody } from 'components/HBody';
+import { Text } from 'react-native';
+import { SContent } from './styles';
 
-import { Container } from './styles';
-
-interface SettingsProps {
-  children: ReactNode;
+interface Props extends DrawerContentComponentProps {
 }
 
-export function SettingsPage({ children }: SettingsProps) {
+export function SettingsPage({ navigation }: Props) {
+
+  function openSidebar(){
+    navigation.openDrawer();
+  }
+
   return (
-    <Container>
-      <Text>Settings</Text>
-      {children}
-    </Container>
+    <HBody useSafeAreaHeader openSidebar={openSidebar}>
+        <SContent>
+            <Text style={{ color: '#fff', fontSize: 20 }}>TODO</Text>
+        </SContent>
+    </HBody>
   );
 };

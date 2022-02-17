@@ -3,9 +3,10 @@ import { Button, Text, TextInput, View } from 'react-native'
 import { HBody } from 'components/HBody';
 import { useUser } from 'hooks/useUser';
 import { RouterKey } from '../../routes/routes-keys';
-import { Container } from './styles';
+import { SContent } from './styles';
 import { StackHeaderProps } from '@react-navigation/stack';
 import { HGradientBackground } from 'components/HGradientBackground';
+import { HPrimaryButton } from 'components/HPrimaryButton';
 
 interface Props extends StackHeaderProps {
   children: ReactNode;
@@ -28,24 +29,13 @@ export function SignInPage({ children, navigation }: Props) {
 
   return (
     <HGradientBackground>
-        <Container>
-          <TextInput
-            placeholder="Username"
-            value={username}
-            onChangeText={setUsername}
-            style={{ backgroundColor: '#fff', height: 60 }}
+        <SContent>
+          <HPrimaryButton 
+            title="SIGN IN" 
+            width={300}
+            onPress={() => handleSignIn(username, password)} 
           />
-          <TextInput
-            placeholder="Password"
-            value={password}
-            onChangeText={setPassword}
-            secureTextEntry
-            style={{ backgroundColor: '#fff', height: 60 }}
-          />
-          <Button title="Entrar" onPress={() => handleSignIn(username, password)}>
-          </Button >
-
-        </Container>
+        </SContent>
     </HGradientBackground>
     
   );

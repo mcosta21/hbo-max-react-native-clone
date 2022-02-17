@@ -1,10 +1,9 @@
 import { StackHeaderProps } from '@react-navigation/stack';
 import { HGradientBackground } from 'components/HGradientBackground';
-import { HLoading } from 'components/HLoading';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Text } from 'react-native';
 import { RouterKey } from '../../routes/routes-keys';
-import { Container } from './styles';
+import { SContent } from './styles';
 
 interface Props extends StackHeaderProps {
 }
@@ -21,11 +20,9 @@ export function SignOutPage({ navigation }: Props) {
 
   return (
     <HGradientBackground>
-        <Container>
-          <Text>
-            Loading logout
-          </Text>
-        </Container>
+        <SContent>
+            <Text style={{ color: '#fff', fontSize: 20 }}>Logout...</Text>
+        </SContent>
     </HGradientBackground>
   );
 };
