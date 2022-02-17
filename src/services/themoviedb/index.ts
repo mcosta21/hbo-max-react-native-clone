@@ -13,10 +13,20 @@ const theMovieDbApi = axios.create({
   }
 });
 
+const patternId = /[\d+]*[\?]/
+
 // Mock response data when request error or THEMOVIE_CLIENT_ID not defined
 theMovieDbApi.interceptors.response.use((response) => {
   return response;
-}, () => {
+}, (error) => {
+  const routeUrl = error.request.responseURL as string;
+
+  if(routeUrl.includes('https://api.themoviedb.org/3/movie/') ||
+     routeUrl.includes('https://api.themoviedb.org/3/tv/')) {
+       const id = routeUrl.match(patternId);
+       return { data: id === null ? dataFake.results[0] : dataFake.results.find(x => x.id === Number(String(id[0]).replace('?', ''))) }
+     }
+
   return { data: dataFake };
 });
 
