@@ -1,0 +1,188 @@
+{
+	"page": 1,
+	"results": [
+		{
+			"adult": false,
+			"backdrop_path": "/8rft8A9nH43IReybFtYt21ezfMK.jpg",
+			"genre_ids": [
+				99
+			],
+			"id": 899082,
+			"original_language": "en",
+			"original_title": "Harry Potter 20th Anniversary: Return to Hogwarts",
+			"overview": "Uma encantadora história de making-of contada por meio de novas entrevistas em profundidade e conversas com o elenco, convidando os fãs a uma jornada mágica em primeira pessoa através de uma das franquias de filmes mais amadas de todos os tempos.",
+			"popularity": 376.436,
+			"poster_path": "/bhY813zHKJStgUwl9kfBA3WDDPS.jpg",
+			"release_date": "2022-01-01",
+			"title": "Comemoração de 20 anos de Harry Potter: De Volta a Hogwarts",
+			"video": false,
+			"vote_average": 8.2,
+			"vote_count": 937
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/7QCXjqMe90HBjDMDj2to7K6YZNO.jpg",
+			"genre_ids": [
+				99
+			],
+			"id": 933255,
+			"original_language": "en",
+			"original_title": "And Just Like That… The Documentary",
+			"overview": "No final dos anos 90, \"Sex and the City\" tomou o mundo da televisão de surpresa com sua perspectiva honesta e hilária sobre amor, relacionamentos... e sexo, ganhando legiões de fãs dedicados. Mais de 20 anos depois, este documentário exclusivo e imersivo oferece um olhar único sobre os bastidores das filmagens do novo capítulo, \"And Just Like That…\".",
+			"popularity": 13.214,
+			"poster_path": "/y9FSiy2RLRZm5qMGDROtJx7AlcO.jpg",
+			"release_date": "2022-02-03",
+			"title": "And Just Like That... O Documentário",
+			"video": false,
+			"vote_average": 8,
+			"vote_count": 1
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/a57BWjLTFJu8k2bHcHjdvOGHgl6.jpg",
+			"genre_ids": [
+				18,
+				35
+			],
+			"id": 892921,
+			"original_language": "pt",
+			"original_title": "Júpiter",
+			"overview": "Mario é um detetive particular passando por uma crise de meia idade. Quando ele descobre que tem um filho de 17 anos fruto de uma relação fora do casamento, sua vida muda drasticamente. Tentando desesperadamente encontrar algo que o ajude a se relacionar com o filho, ele descobre que o menino é um gênio do xadrex e passa a incentivar sua carreira, empolgado com a possibilidade de fazer parte de algo importante pela primeira vez na vida.",
+			"popularity": 2.202,
+			"poster_path": "/xHmwrpNIKoeYNTn8ZPDSRrrGxW4.jpg",
+			"release_date": "2022-01-21",
+			"title": "Júpiter",
+			"video": false,
+			"vote_average": 7.7,
+			"vote_count": 3
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/lMWOcXVA62xnk1jSaz8iwrxVJR7.jpg",
+			"genre_ids": [
+				18
+			],
+			"id": 795514,
+			"original_language": "en",
+			"original_title": "The Fallout",
+			"overview": "O filme acompanha a colegial Vada em sua jornada por uma crise emocional após vivenciar uma tragédia escolar. Seu relacionamento com família e amigos, assim como sua visão do mundo, são alterados para sempre.",
+			"popularity": 680.124,
+			"poster_path": "/oFU6XQAQR6SidzNTnPLzNj9Xc4H.jpg",
+			"release_date": "2022-01-28",
+			"title": "A Vida Depois",
+			"video": false,
+			"vote_average": 7.3,
+			"vote_count": 104
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/mruT954ve6P1zquaRs6XG0hA5k9.jpg",
+			"genre_ids": [
+				53
+			],
+			"id": 800510,
+			"original_language": "en",
+			"original_title": "Kimi",
+			"overview": "E se cada respiração, cada som, cada momento fosse registrado? Durante a pandemia do COVID-19 em Seattle, uma agorafóbica que trabalhar com tecnologia descobre evidências de um crime violento ao revisar um fluxo de dados e encontra resistência e burocracia quando tenta denunciá-lo à sua empresa. Para se envolver, ela percebe que deve enfrentar seu maior medo saindo de seu apartamento e indo para as ruas da cidade, que estão cheias de manifestantes depois que a Câmara Municipal aprova uma lei que restringe os movimentos da população sem-teto.",
+			"popularity": 112.652,
+			"poster_path": "/DUNRzBjRKE1pvl2jiiooDLafKf.jpg",
+			"release_date": "2022-02-10",
+			"title": "Kimi: Alguém Está Escutando",
+			"video": false,
+			"vote_average": 6.8,
+			"vote_count": 40
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/rsjSII7h8UlxERWKFEsGcezMPEv.jpg",
+			"genre_ids": [
+				35,
+				18
+			],
+			"id": 930701,
+			"original_language": "es",
+			"original_title": "Sexo, pudor y lágrimas 2",
+			"overview": "Esta sequência do sucesso de 1999 retoma a história dos personagens originais 22 anos depois, acrescentando o olhar de uma nova geração. Tudo mudou e, embora o sexo esteja a um app de distância, o amor ainda está fora de alcance.",
+			"popularity": 836.816,
+			"poster_path": "/lJZnjfdxo2T3Q3lFLnwpDLJrTwj.jpg",
+			"release_date": "2022-02-04",
+			"title": "Sexo, Pudor e Lágrimas 2",
+			"video": false,
+			"vote_average": 2.3,
+			"vote_count": 4
+		},
+		{
+			"adult": false,
+			"backdrop_path": null,
+			"genre_ids": [],
+			"id": 927489,
+			"original_language": "en",
+			"original_title": "Antebellum",
+			"overview": "",
+			"popularity": 1.577,
+			"poster_path": null,
+			"release_date": "2022-01-12",
+			"title": "Antebellum",
+			"video": false,
+			"vote_average": 0,
+			"vote_count": 0
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/emUakgc6dY0wsKCRnItQ9uLq7m2.jpg",
+			"genre_ids": [
+				18
+			],
+			"id": 743048,
+			"original_language": "es",
+			"original_title": "Errante corazón",
+			"overview": "Santiago, um homem dominado por seus demônios e paixões, embarca numa busca desesperada e frenética de uma única coisa: amar e ser amado.",
+			"popularity": 4.915,
+			"poster_path": "/jpZAteFYRZXDiKSXUvUhYC92Vry.jpg",
+			"release_date": "2022-04-01",
+			"title": "Coração Errante",
+			"video": false,
+			"vote_average": 0,
+			"vote_count": 0
+		},
+		{
+			"adult": false,
+			"backdrop_path": null,
+			"genre_ids": [
+				10402,
+				35
+			],
+			"id": 684006,
+			"original_language": "en",
+			"original_title": "Fisherman's Friends: One and All",
+			"overview": "",
+			"popularity": 6.506,
+			"poster_path": "/7JFDwHSRM36AHMVeex4vL0GDeHH.jpg",
+			"release_date": "2022-04-29",
+			"title": "Fisherman's Friends: One and All",
+			"video": false,
+			"vote_average": 0,
+			"vote_count": 0
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/xMuiZ0LhBVlIVC5wwMENhK4T5ns.jpg",
+			"genre_ids": [
+				18
+			],
+			"id": 554285,
+			"original_language": "en",
+			"original_title": "Butter",
+			"overview": "Por causa de seu peso, Butter é o alvo ideal para os valentões da escola. Decidido a pôr um fim nisso, ele põe em marcha um\r plano macabro: transmitir ao vivo sua “última ceia” na véspera do Ano Novo.",
+			"popularity": 7.037,
+			"poster_path": "/zOcjEBw6KOcpVLxmEW4adToQ9SM.jpg",
+			"release_date": "2022-02-25",
+			"title": "Banha",
+			"video": false,
+			"vote_average": 0,
+			"vote_count": 0
+		}
+	],
+	"total_pages": 1,
+	"total_results": 10
+}

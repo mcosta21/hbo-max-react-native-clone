@@ -1,5 +1,6 @@
 import axios from 'axios';
-import { THEMOVIEDB_CLIENT_ID } from '@env'
+import { THEMOVIEDB_CLIENT_ID } from '@env';
+import dataFake from './data-fake.json';
 
 const HBO_MAX_CODE = 384;
 
@@ -12,7 +13,11 @@ const theMovieDbApi = axios.create({
   }
 });
 
-theMovieDbApi.interceptors.request.use()
-
+// Mock response data when request error or THEMOVIE_CLIENT_ID not defined
+theMovieDbApi.interceptors.response.use((response) => {
+  return response;
+}, () => {
+  return { data: dataFake };
+});
 
 export { theMovieDbApi };
