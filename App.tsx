@@ -1,9 +1,6 @@
-import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import AppLoading from 'expo-app-loading';
 import { NavigationContainer } from '@react-navigation/native';
 import { PublicRoutes } from './src/routes/public.routes';
-import { UserProvider } from './src/context/UserContext';
 
 import theme from './src/styles/GlobalStyles';
 import { useFonts, Quicksand_400Regular, Quicksand_500Medium, Quicksand_700Bold } from '@expo-google-fonts/quicksand';
@@ -23,13 +20,11 @@ export default function App() {
   }
 
   return (
-    <UserProvider>
-      <TabProvider>
-        <NavigationContainer>
-          <PublicRoutes />
-          <StatusBar style="light" backgroundColor={theme.colors.black_0} />
-        </NavigationContainer>
-      </TabProvider>
-    </UserProvider>
+    <TabProvider>
+      <NavigationContainer>
+        <PublicRoutes />
+        <StatusBar style="light" backgroundColor={theme.colors.black_0} />
+      </NavigationContainer>
+    </TabProvider>
   );
 }
