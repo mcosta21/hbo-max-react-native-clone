@@ -1,4 +1,5 @@
-import { Feather } from '@expo/vector-icons';
+import { AntDesign, Feather } from '@expo/vector-icons';
+import { Linking } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Animated, { interpolateColor, useAnimatedStyle, useDerivedValue, withTiming } from 'react-native-reanimated';
 import theme from 'styles/GlobalStyles';
@@ -48,6 +49,10 @@ export function HHeader({
     };
   }); 
 
+  function handleOpenGitHub(){
+    Linking.openURL('https://github.com/mcosta21/hbo-max-react-native-clone');
+  }
+
   return (
     <SContainer>
       <Animated.View style={[backgroundStyle]}>
@@ -86,7 +91,11 @@ export function HHeader({
                   )
                 }
 
-                <SRightSide />
+                <SRightSide>
+                  <TouchableOpacity onPress={() => handleOpenGitHub()} >
+                      <AntDesign name="github" size={26} color={theme.colors.white} />
+                    </TouchableOpacity>
+                </SRightSide>
               </>
             )
           }
