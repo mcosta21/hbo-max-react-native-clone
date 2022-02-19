@@ -26,7 +26,6 @@ export const SContent = styled.View`
 `
 
 export const SCenter = styled.View`
-   background-color: blue;
    flex: 1;
    height: 100%;
 `;

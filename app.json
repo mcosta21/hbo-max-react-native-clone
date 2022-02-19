@@ -1,14 +1,16 @@
 {
   "expo": {
-    "name": "hbo-max-react-native-clone",
+    "name": "HBO Max Clone",
     "slug": "hbo-max-react-native-clone",
+    "privacy": "public",
+    "description": "This is a clone app by HBO Max using React Native Expo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#191919"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,7 +24,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#191919"
       }
     },
     "web": {

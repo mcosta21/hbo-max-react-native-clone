@@ -8,12 +8,12 @@ interface Props extends DrawerContentComponentProps {
 
 export function SettingsPage({ navigation }: Props) {
 
-  function openSidebar(){
-    navigation.openDrawer();
+  function goBack(){
+    navigation.goBack();
   }
 
   return (
-    <HBody useSafeAreaHeader openSidebar={openSidebar}>
+    <HBody useSafeAreaHeader goBack={goBack}>
         <SContent>
             <Text style={{ color: '#fff', fontSize: 20 }}>TODO</Text>
         </SContent>
