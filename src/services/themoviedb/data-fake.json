@@ -21,166 +21,186 @@
 		},
 		{
 			"adult": false,
-			"backdrop_path": "/7QCXjqMe90HBjDMDj2to7K6YZNO.jpg",
-			"genre_ids": [
-				99
-			],
-			"id": 933255,
-			"original_language": "en",
-			"original_title": "And Just Like That… The Documentary",
-			"overview": "No final dos anos 90, \"Sex and the City\" tomou o mundo da televisão de surpresa com sua perspectiva honesta e hilária sobre amor, relacionamentos... e sexo, ganhando legiões de fãs dedicados. Mais de 20 anos depois, este documentário exclusivo e imersivo oferece um olhar único sobre os bastidores das filmagens do novo capítulo, \"And Just Like That…\".",
-			"popularity": 13.214,
-			"poster_path": "/y9FSiy2RLRZm5qMGDROtJx7AlcO.jpg",
-			"release_date": "2022-02-03",
-			"title": "And Just Like That... O Documentário",
-			"video": false,
-			"vote_average": 8,
-			"vote_count": 1
-		},
-		{
-			"adult": false,
-			"backdrop_path": "/a57BWjLTFJu8k2bHcHjdvOGHgl6.jpg",
+			"backdrop_path": "/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
 			"genre_ids": [
 				18,
-				35
-			],
-			"id": 892921,
-			"original_language": "pt",
-			"original_title": "Júpiter",
-			"overview": "Mario é um detetive particular passando por uma crise de meia idade. Quando ele descobre que tem um filho de 17 anos fruto de uma relação fora do casamento, sua vida muda drasticamente. Tentando desesperadamente encontrar algo que o ajude a se relacionar com o filho, ele descobre que o menino é um gênio do xadrex e passa a incentivar sua carreira, empolgado com a possibilidade de fazer parte de algo importante pela primeira vez na vida.",
-			"popularity": 2.202,
-			"poster_path": "/xHmwrpNIKoeYNTn8ZPDSRrrGxW4.jpg",
-			"release_date": "2022-01-21",
-			"title": "Júpiter",
-			"video": false,
-			"vote_average": 7.7,
-			"vote_count": 3
-		},
-		{
-			"adult": false,
-			"backdrop_path": "/lMWOcXVA62xnk1jSaz8iwrxVJR7.jpg",
-			"genre_ids": [
-				18
-			],
-			"id": 795514,
-			"original_language": "en",
-			"original_title": "The Fallout",
-			"overview": "O filme acompanha a colegial Vada em sua jornada por uma crise emocional após vivenciar uma tragédia escolar. Seu relacionamento com família e amigos, assim como sua visão do mundo, são alterados para sempre.",
-			"popularity": 680.124,
-			"poster_path": "/oFU6XQAQR6SidzNTnPLzNj9Xc4H.jpg",
-			"release_date": "2022-01-28",
-			"title": "A Vida Depois",
-			"video": false,
-			"vote_average": 7.3,
-			"vote_count": 104
-		},
-		{
-			"adult": false,
-			"backdrop_path": "/mruT954ve6P1zquaRs6XG0hA5k9.jpg",
-			"genre_ids": [
+				28,
+				80,
 				53
 			],
-			"id": 800510,
+			"id": 155,
 			"original_language": "en",
-			"original_title": "Kimi",
-			"overview": "E se cada respiração, cada som, cada momento fosse registrado? Durante a pandemia do COVID-19 em Seattle, uma agorafóbica que trabalhar com tecnologia descobre evidências de um crime violento ao revisar um fluxo de dados e encontra resistência e burocracia quando tenta denunciá-lo à sua empresa. Para se envolver, ela percebe que deve enfrentar seu maior medo saindo de seu apartamento e indo para as ruas da cidade, que estão cheias de manifestantes depois que a Câmara Municipal aprova uma lei que restringe os movimentos da população sem-teto.",
-			"popularity": 112.652,
-			"poster_path": "/DUNRzBjRKE1pvl2jiiooDLafKf.jpg",
-			"release_date": "2022-02-10",
-			"title": "Kimi: Alguém Está Escutando",
+			"original_title": "The Dark Knight",
+			"overview": "Após dois anos desde o surgimento do Batman, os criminosos de Gotham City têm muito o que temer. Com a ajuda do tenente James Gordon e do promotor público Harvey Dent, Batman luta contra o crime organizado. Acuados com o combate, os chefes do crime aceitam a proposta feita pelo Coringa e o contratam para combater o Homem-Morcego.",
+			"popularity": 86.731,
+			"poster_path": "/iGZX91hIqM9Uu0KGhd4MUaJ0Rtm.jpg",
+			"release_date": "2008-07-14",
+			"title": "Batman: O Cavaleiro das Trevas",
+			"video": false,
+			"vote_average": 8.5,
+			"vote_count": 26853
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/srYya1ZlI97Au4jUYAktDe3avyA.jpg",
+			"genre_ids": [
+				28,
+				12,
+				14
+			],
+			"id": 464052,
+			"original_language": "en",
+			"original_title": "Wonder Woman 1984",
+			"overview": "Em 1984, Diana Prince entra em conflito com dois inimigos formidáveis, Maxwell Lord e a Mulher-Leopardo, enquanto reencontra misteriosamente com seu antigo interesse amoroso Steve Trevor.",
+			"popularity": 208.269,
+			"poster_path": "/AweDlIiohqw4sjC7gCsPVd1zo77.jpg",
+			"release_date": "2020-12-16",
+			"title": "Mulher-Maravilha 1984",
+			"video": false,
+			"vote_average": 6.6,
+			"vote_count": 6538
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/sLWUtbrpiLp23a0XDSiUiltdFPJ.jpg",
+			"genre_ids": [
+				28,
+				12,
+				14
+			],
+			"id": 1930,
+			"original_language": "en",
+			"original_title": "The Amazing Spider-Man",
+			"overview": "Peter Parker está tentando saber mais sobre sua origem. Ele encontra uma pasta que pertenceu ao seu pai e quer descobrir por que seus pais desapareceram. Sua busca o leva a Oscorp e ao dr. Curt Connors, que tem como alterego o letal Lagarto.",
+			"popularity": 350.706,
+			"poster_path": "/dODKvv9o9BOemWavnulutJBHM80.jpg",
+			"release_date": "2012-06-23",
+			"title": "O Espetacular Homem-Aranha",
+			"video": false,
+			"vote_average": 6.7,
+			"vote_count": 14474
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+			"genre_ids": [
+				12,
+				18,
+				878
+			],
+			"id": 157336,
+			"original_language": "en",
+			"original_title": "Interstellar",
+			"overview": "As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.",
+			"popularity": 113.315,
+			"poster_path": "/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg",
+			"release_date": "2014-11-05",
+			"title": "Interestelar",
+			"video": false,
+			"vote_average": 8.4,
+			"vote_count": 27842
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
+			"genre_ids": [
+				28,
+				12,
+				14,
+				878
+			],
+			"id": 791373,
+			"original_language": "en",
+			"original_title": "Zack Snyder's Justice League",
+			"overview": "Determinado a garantir que o sacrifício final do Superman não foi em vão, Bruce Wayne alinha forças com Diana Prince com planos de recrutar uma equipe de metahumanos para proteger o mundo de uma ameaça de proporções catastróficas que se aproxima.",
+			"popularity": 365.269,
+			"poster_path": "/ArWn6gCi61b3b3hclD2L0LOk66k.jpg",
+			"release_date": "2021-03-18",
+			"title": "Liga da Justiça de Zack Snyder",
+			"video": false,
+			"vote_average": 8.3,
+			"vote_count": 7314
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/vw3zNfzvnVNF7nIjpiEgcdznfeC.jpg",
+			"genre_ids": [
+				16,
+				28,
+				14
+			],
+			"id": 664767,
+			"original_language": "en",
+			"original_title": "Mortal Kombat Legends: Scorpion's Revenge",
+			"overview": "Após o massacre cruel de sua família pelo mercenário Sub-Zero, Hanzo Hasashi é exilado no tortuoso Netherrealm, lá, em troca de sua servidão ao sinistro Quan Chi, ele tem a chance de vingar sua família - e ressuscita como Scorpion, uma alma perdida e vingativa. De volta ao Earthrealm, Lord Raiden reúne uma equipe de guerreiros de elite - o monge Shaolin Liu Kang, a oficial das Forças Especiais Sonya Blade e o ator de ação Johnny Cage - um grupo improvável de heróis com uma chance de salvar a humanidade. Para fazer isso, eles devem derrotar a horda de gladiadores do Outworld de Shang Tsung e vencer o torneio Mortal Kombat.",
+			"popularity": 42.217,
+			"poster_path": "/zO5913BWcWYrhgACNpaaw9CCycX.jpg",
+			"release_date": "2020-04-12",
+			"title": "Mortal Kombat Legends: A Vingança de Scorpion",
+			"video": false,
+			"vote_average": 8.3,
+			"vote_count": 1069
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/eNI7PtK6DEYgZmHWP9gQNuff8pv.jpg",
+			"genre_ids": [
+				878,
+				28,
+				12
+			],
+			"id": 624860,
+			"original_language": "en",
+			"original_title": "The Matrix Resurrections",
+			"overview": "Em um mundo de duas realidades — a vida cotidiana e o que está por trás dela —, Thomas Anderson terá que escolher seguir o coelho branco mais uma vez. A escolha, embora seja uma ilusão, ainda é a única maneira de entrar ou sair da Matrix, que é mais forte, mais segura e mais perigosa do que nunca.",
+			"popularity": 1359.883,
+			"poster_path": "/9DT4WVqZqBEI9Kub18gZ3m1D89m.jpg",
+			"release_date": "2021-12-16",
+			"title": "Matrix Resurrections",
 			"video": false,
 			"vote_average": 6.8,
-			"vote_count": 40
+			"vote_count": 2947
 		},
 		{
 			"adult": false,
-			"backdrop_path": "/rsjSII7h8UlxERWKFEsGcezMPEv.jpg",
+			"backdrop_path": "/9N3KKOKpqEFe9GhHaIVHwk9N1Y.jpg",
 			"genre_ids": [
+				16,
 				35,
-				18
+				10751,
+				14
 			],
-			"id": 930701,
-			"original_language": "es",
-			"original_title": "Sexo, pudor y lágrimas 2",
-			"overview": "Esta sequência do sucesso de 1999 retoma a história dos personagens originais 22 anos depois, acrescentando o olhar de uma nova geração. Tudo mudou e, embora o sexo esteja a um app de distância, o amor ainda está fora de alcance.",
-			"popularity": 836.816,
-			"poster_path": "/lJZnjfdxo2T3Q3lFLnwpDLJrTwj.jpg",
-			"release_date": "2022-02-04",
-			"title": "Sexo, Pudor e Lágrimas 2",
-			"video": false,
-			"vote_average": 2.3,
-			"vote_count": 4
-		},
-		{
-			"adult": false,
-			"backdrop_path": null,
-			"genre_ids": [],
-			"id": 927489,
+			"id": 76492,
 			"original_language": "en",
-			"original_title": "Antebellum",
-			"overview": "",
-			"popularity": 1.577,
-			"poster_path": null,
-			"release_date": "2022-01-12",
-			"title": "Antebellum",
+			"original_title": "Hotel Transylvania",
+			"overview": "O Hotel Transilvânia é um resort cinco estrelas que serve de refúgio para que os monstros possam descansar do árduo trabalho de perseguir e assustar os humanos. O local é comandado pelo Conde Drácula, que resolve convidar os amigos para comemorar o 118º aniversário de sua filha, Mavis. O que ele não esperava era que Jonathan, um humano sem noção, fosse aparecer no local justo quando o hotel está repleto de convidados e, ainda por cima, se apaixonasse por Mavis.",
+			"popularity": 83.823,
+			"poster_path": "/50I0Oyo5K8cn8bRxAdUKbqZBHRL.jpg",
+			"release_date": "2012-09-20",
+			"title": "Hotel Transilvânia",
 			"video": false,
-			"vote_average": 0,
-			"vote_count": 0
+			"vote_average": 7,
+			"vote_count": 7198
 		},
 		{
 			"adult": false,
-			"backdrop_path": "/emUakgc6dY0wsKCRnItQ9uLq7m2.jpg",
+			"backdrop_path": "/9QusGjxcYvfPD1THg6oW3RLeNn7.jpg",
 			"genre_ids": [
-				18
+				28,
+				12,
+				14
 			],
-			"id": 743048,
-			"original_language": "es",
-			"original_title": "Errante corazón",
-			"overview": "Santiago, um homem dominado por seus demônios e paixões, embarca numa busca desesperada e frenética de uma única coisa: amar e ser amado.",
-			"popularity": 4.915,
-			"poster_path": "/jpZAteFYRZXDiKSXUvUhYC92Vry.jpg",
-			"release_date": "2022-04-01",
-			"title": "Coração Errante",
-			"video": false,
-			"vote_average": 0,
-			"vote_count": 0
-		},
-		{
-			"adult": false,
-			"backdrop_path": null,
-			"genre_ids": [
-				10402,
-				35
-			],
-			"id": 684006,
+			"id": 297802,
 			"original_language": "en",
-			"original_title": "Fisherman's Friends: One and All",
-			"overview": "",
-			"popularity": 6.506,
-			"poster_path": "/7JFDwHSRM36AHMVeex4vL0GDeHH.jpg",
-			"release_date": "2022-04-29",
-			"title": "Fisherman's Friends: One and All",
+			"original_title": "Aquaman",
+			"overview": "A cidade de Atlantis, que já foi lar de uma das mais avançadas civilizações do mundo, agora é um reino submerso dominado pelo ganancioso Rei Orm. Com um vasto exército a seu dispor, Orm planeja conquistar tanto os demais reinos do oceano, quanto o mundo da superfície. Em seu caminho está Aquaman, meio-humano e meio-atlante, e verdadeiro herdeiro do trono. Com a ajuda da princesa Mera, Aquaman precisa recuperar o lendário Tridente de Atlan e aceitar seu destino como protetor das profundezas.",
+			"popularity": 89.808,
+			"poster_path": "/oB367uFcyU2uhGkFqo5RB4Evdji.jpg",
+			"release_date": "2018-07-06",
+			"title": "Aquaman",
 			"video": false,
-			"vote_average": 0,
-			"vote_count": 0
-		},
-		{
-			"adult": false,
-			"backdrop_path": "/xMuiZ0LhBVlIVC5wwMENhK4T5ns.jpg",
-			"genre_ids": [
-				18
-			],
-			"id": 554285,
-			"original_language": "en",
-			"original_title": "Butter",
-			"overview": "Por causa de seu peso, Butter é o alvo ideal para os valentões da escola. Decidido a pôr um fim nisso, ele põe em marcha um\r plano macabro: transmitir ao vivo sua “última ceia” na véspera do Ano Novo.",
-			"popularity": 7.037,
-			"poster_path": "/zOcjEBw6KOcpVLxmEW4adToQ9SM.jpg",
-			"release_date": "2022-02-25",
-			"title": "Banha",
-			"video": false,
-			"vote_average": 0,
-			"vote_count": 0
+			"vote_average": 6.9,
+			"vote_count": 11445
 		}
 	],
 	"total_pages": 1,
