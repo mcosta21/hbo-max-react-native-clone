@@ -26,7 +26,11 @@ $ yarn
 $ yarn start || yarn android || yarn ios
 ```
 
-> This app is getting the movies and series by [The Movie Database (TMDB)](https://www.themoviedb.org/) API, so it needs a API Key to works. However, I intercep all error requests when this key is not defined, and *mock* the data.
+## Getting data
+
+This app is getting the movies and series by [The Movie Database (TMDB)](https://www.themoviedb.org/) API, so it needs a API Key to works. 
+
+However, I intercep all error requests when this key is not defined, and *mock* the data.
 
 ```javascript
 // services/themoviedb/index.ts
