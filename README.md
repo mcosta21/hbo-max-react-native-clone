@@ -8,6 +8,31 @@
 
 ## Screenshots
 
+<table align="center">
+  <tr>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-0.png" />
+    </td>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-1.png" />
+    </td>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-2.png" />
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-3.png" />
+    </td>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-4.png" />
+    </td>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-5.png" />
+    </td>
+  </tr>
+</table>
+
 ## Run yourself
 
 You'll need to install some Android emulator (Ex: [Android Studio](https://developer.android.com/studio)), or using [Expo Go](https://expo.dev/client) app
