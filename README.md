@@ -8,6 +8,31 @@
 
 ## Screenshots
 
+<table align="center">
+  <tr>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-0.png" />
+    </td>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-1.png" />
+    </td>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-2.png" />
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-3.png" />
+    </td>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-4.png" />
+    </td>
+    <td valign="top">
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-5.png" />
+    </td>
+  </tr>
+</table>
+
 ## Run yourself
 
 You'll need to install some Android emulator (Ex: [Android Studio](https://developer.android.com/studio)), or using [Expo Go](https://expo.dev/client) app
@@ -51,3 +76,33 @@ theMovieDbApi.interceptors.response.use((response) => {
 ```
 
 > Define the API Key on **THEMOVIEDB_CLIENT_ID** in .env file
+
+
+## Technologies
+
+<p align="center">
+ <a href="https://reactnative.dev/" target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/200px-React-icon.svg.png" alt="React Native" height="50" />
+ </a>
+  &nbsp&nbsp  
+ <a href="https://expo.dev/" target="_blank">
+   <img src="https://image.winudf.com/v2/image1/aG9zdC5leHAuZXhwb25lbnRfaWNvbl8xNjAxNzEwNzk5XzAxMA/icon.png?w=&fakeurl=1" alt="Expo" height="50" />
+ </a>
+  &nbsp&nbsp
+  <a href="https://styled-components.com/" target="_blank">
+    <img src="https://ih1.redbubble.net/image.446304524.2298/st,small,507x507-pad,600x600,f8f8f8.u2.jpg" alt="Styled Components" height="50">
+  </a>
+  &nbsp&nbsp
+  <a href="https://axios-http.com/docs/intro" target="_blank">
+    <img src="https://miro.medium.com/max/1400/1*cNzp6bhkU1Zf53QyVIgDog.png" alt="Axios" height="50">
+  </a>
+  &nbsp&nbsp
+  <a href="https://www.themoviedb.org/" target="_blank">
+    <img src="https://github.com/mcosta21/netflix-clone-reactjs/blob/master/docs/icon-tmdb.png?raw=true" alt="TMDB" height="50">
+  </a>
+</p>
+
+<br/>
+<br/>
+
+> Developed by [Marcio Costa](https://www.linkedin.com/in/marcio-costa-03131a149/).
