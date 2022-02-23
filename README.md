@@ -101,3 +101,8 @@ theMovieDbApi.interceptors.response.use((response) => {
     <img src="https://github.com/mcosta21/netflix-clone-reactjs/blob/master/docs/icon-tmdb.png?raw=true" alt="TMDB" height="50">
   </a>
 </p>
+
+<br/>
+<br/>
+
+> Developed by [Marcio Costa](https://www.linkedin.com/in/marcio-costa-03131a149/).
