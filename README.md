@@ -1,7 +1,7 @@
 # HBO Max Clone
 
 <p align="center">
-  <img src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/hbomax-gif.gif"/> 
+  <img src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/.github/hbomax-gif.gif"/> 
 <p/>
 
 <p align="center">This is a clone app by HBO Max using React Native Expo</p>
@@ -11,24 +11,24 @@
 <table align="center">
   <tr>
     <td valign="top">
-      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-0.png" />
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/.github/screenshot-0.png" />
     </td>
     <td valign="top">
-      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-1.png" />
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/.github/screenshot-1.png" />
     </td>
     <td valign="top">
-      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-2.png" />
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/.github/screenshot-2.png" />
     </td>
   </tr>
   <tr>
     <td valign="top">
-      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-3.png" />
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/.github/screenshot-3.png" />
     </td>
     <td valign="top">
-      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-4.png" />
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/.github/screenshot-4.png" />
     </td>
     <td valign="top">
-      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/assets/screenshot-5.png" />
+      <img width="280" src="https://github.com/mcosta21/hbo-max-react-native-clone/blob/main/.github/screenshot-5.png" />
     </td>
   </tr>
 </table>
