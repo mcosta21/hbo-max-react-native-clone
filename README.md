@@ -105,4 +105,4 @@ theMovieDbApi.interceptors.response.use((response) => {
 <br/>
 <br/>
 
-> Developed by [Marcio Costa](https://www.linkedin.com/in/marcio-costa-03131a149/).
+> Developed by [Marcio Costa](https://www.linkedin.com/in/mcosta21/).
